@@ -14,11 +14,11 @@
       </div>
     </header>
 
-    <div class="flex min-h-full flex-1">
+    <div class="xl:flex min-h-full flex-1">
       <!-- Sidebar/Header -->
-      <header class="bg-slate-50 lg:fixed lg:top-16 lg:bottom-0 lg:left-0 lg:flex lg:w-md lg:items-start lg:overflow-y-auto xl:w-120">
+      <header class="bg-slate-50 xl:fixed xl:top-16 xl:bottom-0 xl:left-0 xl:flex xl:w-120 xl:items-start xl:overflow-y-auto">
       <!-- Hosted By (Vertical Text) -->
-      <div class="hidden lg:sticky lg:top-4 lg:flex lg:w-16 lg:flex-none lg:items-center lg:px-12 lg:text-sm lg:whitespace-nowrap lg:[writing-mode:vertical-rl]">
+      <div class="hidden xl:sticky xl:top-4 xl:flex xl:w-16 xl:flex-none xl:items-center xl:px-12 xl:text-sm xl:whitespace-nowrap xl:[writing-mode:vertical-rl]">
         <span class="font-mono text-slate-500 leading-7">Hosted by</span>
         <span class="mt-6 flex gap-6 font-bold text-slate-900">
           <span>Dan Vega</span>
@@ -27,11 +27,11 @@
         </span>
       </div>
 
-      <div class="relative z-10 mx-auto px-4 pt-10 pb-4 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:px-8 lg:py-12 xl:px-12">
+      <div class="relative z-10 mx-auto px-4 pt-10 pb-4 sm:px-6 md:max-w-2xl md:px-4 xl:min-h-full xl:flex-auto xl:border-x xl:border-slate-200 xl:px-12 xl:py-12">
         <!-- Podcast Cover -->
         <NuxtLink
           to="/podcast"
-          class="relative mx-auto block w-48 overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl"
+          class="relative mx-auto block w-48 overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:w-64 sm:rounded-xl xl:w-auto xl:rounded-2xl"
           aria-label="Podcast homepage"
         >
           <NuxtImg
@@ -42,11 +42,11 @@
             height="400"
             format="webp"
           />
-          <div class="absolute inset-0 rounded-lg ring-1 ring-black/10 ring-inset sm:rounded-xl lg:rounded-2xl" />
+          <div class="absolute inset-0 rounded-lg ring-1 ring-black/10 ring-inset sm:rounded-xl xl:rounded-2xl" />
         </NuxtLink>
 
         <!-- Podcast Title -->
-        <div class="mt-10 text-center lg:mt-12 lg:text-left">
+        <div class="mt-10 text-center xl:mt-12 xl:text-left">
           <p class="text-xl font-bold text-slate-900">
             <NuxtLink to="/podcast">FOSE Podcast</NuxtLink>
           </p>
@@ -55,8 +55,8 @@
           </p>
         </div>
 
-        <!-- Listen Section (Hidden on small screens, shown in footer) -->
-        <section class="mt-10 hidden lg:block lg:mt-12">
+        <!-- Listen Section -->
+        <section class="mt-10 xl:mt-12">
           <h2 class="flex items-center font-mono text-sm font-medium text-slate-900 leading-7">
             <TinyWaveFormIcon
               :colors="['fill-indigo-300', 'fill-blue-300']"
@@ -87,7 +87,7 @@
         </section>
 
         <!-- Watch Section -->
-        <section class="mt-10 hidden lg:block lg:mt-12">
+        <section class="mt-10 xl:mt-12">
           <h2 class="flex items-center font-mono text-sm font-medium text-slate-900 leading-7">
             <svg class="h-2.5 w-2.5 fill-red-500" viewBox="0 0 24 24">
               <path d="M10 8v8l5-4-5-4z" />
@@ -107,22 +107,22 @@
     </header>
 
     <!-- Waveform Background (Full Width) -->
-    <Waveform class="absolute top-16 left-0 h-20 w-full lg:top-16" />
+    <Waveform class="absolute top-16 left-0 h-20 w-full" />
 
     <!-- Main Content -->
-    <main class="border-t border-slate-200 lg:relative lg:mb-28 lg:ml-112 lg:border-t-0 xl:ml-120">
+    <main class="border-t border-slate-200 xl:relative xl:mb-28 xl:ml-120 xl:border-t-0 w-full">
       <div class="relative">
         <slot />
       </div>
     </main>
 
     <!-- Fixed Audio Player -->
-    <div class="fixed inset-x-0 bottom-0 z-10 lg:left-112 xl:left-120">
+    <div class="fixed inset-x-0 bottom-0 z-10 xl:left-120">
       <AudioPlayer />
     </div>
 
     <!-- Mobile Footer -->
-    <footer class="border-t border-slate-200 bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden">
+    <footer class="border-t border-slate-200 bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 xl:hidden">
       <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4">
         <h2 class="mt-8 flex items-center font-mono text-sm font-medium text-slate-900 leading-7">
           <svg class="h-3 w-auto fill-slate-300" viewBox="0 0 11 12">

@@ -2,17 +2,17 @@
   <article class="py-16 lg:py-36">
     <Container>
       <header class="flex flex-col">
-        <div class="flex items-center gap-6">
+        <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:gap-6">
           <button
             @click="audioStore.toggle(episode)"
-            class="group relative flex h-18 w-18 shrink-0 items-center justify-center rounded-full bg-slate-700 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-700 focus:ring-offset-4"
+            class="group relative flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-slate-700 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-700 focus:ring-offset-4 md:h-18 md:w-18"
             :aria-label="`${audioStore.currentEpisode?.id === episode.id && audioStore.isPlaying ? 'Pause' : 'Play'} episode ${episode.title}`"
           >
-            <PauseIcon v-if="audioStore.currentEpisode?.id === episode.id && audioStore.isPlaying" class="h-9 w-9 fill-white group-active:fill-white/80" />
-            <PlayIcon v-else class="h-9 w-9 fill-white group-active:fill-white/80" />
+            <PauseIcon v-if="audioStore.currentEpisode?.id === episode.id && audioStore.isPlaying" class="h-7 w-7 fill-white group-active:fill-white/80 md:h-9 md:w-9" />
+            <PlayIcon v-else class="h-7 w-7 fill-white group-active:fill-white/80 md:h-9 md:w-9" />
           </button>
           <div class="flex flex-col">
-            <h1 class="mt-2 text-4xl font-bold text-slate-900">
+            <h1 class="mt-2 text-2xl font-bold text-slate-900 md:text-4xl">
               {{ episode.title }}
             </h1>
             <time
@@ -23,7 +23,7 @@
             </time>
           </div>
         </div>
-        <p class="mt-3 ml-24 text-lg font-medium text-slate-700 leading-8">
+        <p class="mt-3 text-lg font-medium text-slate-700 leading-8 md:ml-24">
           {{ episode.description }}
         </p>
       </header>
