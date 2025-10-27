@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@nuxtjs/sitemap": "^7.4.7",
-    "@tailwindcss/typography": "^0.5.19"
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^24.9.1"
   }
 }
