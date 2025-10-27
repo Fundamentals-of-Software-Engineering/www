@@ -74,6 +74,7 @@ const route = useRoute()
 const navigation = [
   { name: 'Book', href: '/' },
   { name: 'Podcast', href: '/podcast' },
+  { name: 'Blog', href: '/blog' },
   { name: 'Authors', href: '/authors' }
 ]
 
