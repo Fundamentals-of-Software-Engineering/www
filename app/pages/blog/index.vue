@@ -1,12 +1,12 @@
 <template>
   <div class="pt-16 pb-12 sm:pb-4 lg:pt-12">
     <Container size="lg">
-      <div class="max-w-2xl">
+      <div class="max-w-4xl">
         <h1 class="text-4xl font-display font-bold text-slate-900 sm:text-5xl">
           From the blog
         </h1>
         <p class="mt-4 text-lg text-slate-600">
-          Learn how to grow your business with our expert advice.
+          Articles on software engineering fundamentals, best practices, and career advice from industry experts.
         </p>
       </div>
 

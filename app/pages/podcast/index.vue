@@ -82,13 +82,13 @@ useSeoMeta({
   description: 'Listen to the FOSE Podcast and learn software engineering fundamentals beyond coding. Weekly episodes featuring expert insights on maintainability, architecture, and career growth.',
   ogTitle: 'FOSE Podcast - Fundamentals of Software Engineering',
   ogDescription: 'Learn software engineering fundamentals beyond coding with weekly podcast episodes from industry experts.',
-  ogImage: `${siteUrl}/images/poster.jpg`,
+  ogImage: `${siteUrl}/images/podcast_poster.png`,
   ogUrl: `${siteUrl}/podcast`,
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'FOSE Podcast',
   twitterDescription: 'Software engineering fundamentals beyond coding - weekly podcast episodes.',
-  twitterImage: `${siteUrl}/images/poster.jpg`
+  twitterImage: `${siteUrl}/images/podcast_poster.png`
 })
 
 useHead({
