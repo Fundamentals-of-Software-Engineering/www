@@ -1,7 +1,7 @@
 ---
 title: Hello, Fundamentals of SWE!
 description: Welcome to the Fundamentals of Software Engineering community! Learn about our book, podcast, and this new website where we will be sharing knowledge and insights.
-publishedAt: 2024-03-20
+publishedAt: 2025-10-27
 author: dan-vega
 published: true
 ---
