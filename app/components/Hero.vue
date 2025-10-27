@@ -48,7 +48,7 @@
             Level Up Your Software Engineering Career
           </h1>
           <p class="mt-4 text-3xl text-slate-600">
-            The essential guide to mastering fundamentals beyond coding. <span class="text-slate-900">Nate Schutta</span> and <span class="text-slate-900">Dan Vega</span> teach you maintainability, architecture, and the skills that accelerate your career.
+            The essential guide to mastering fundamentals beyond coding. >Nate Schutta and Dan Vega teach you maintainability, architecture, and the skills that accelerate your career.
           </p>
           <div class="mt-8 flex gap-4">
             <Button
