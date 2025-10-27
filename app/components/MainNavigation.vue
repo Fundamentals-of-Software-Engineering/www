@@ -48,7 +48,7 @@
       </svg>
     </a>
     <a
-      href="https://bsky.app/profile/nts.bsky.social"
+      href="https://bsky.app/profile/fundamentalsofswe.bsky.social"
       target="_blank"
       rel="noopener noreferrer"
       class="text-slate-700 hover:text-slate-900 transition-colors"
