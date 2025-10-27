@@ -9,6 +9,9 @@
           <NuxtLink to="/podcast" class="hover:text-slate-900 transition">
             Podcast
           </NuxtLink>
+          <NuxtLink to="/blog" class="hover:text-slate-900 transition">
+            Blog
+          </NuxtLink>
           <NuxtLink to="/authors" class="hover:text-slate-900 transition">
             Authors
           </NuxtLink>
