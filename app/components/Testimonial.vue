@@ -20,7 +20,7 @@
             <slot />
           </blockquote>
         </div>
-        <figcaption class="text-sm lg:row-end-2">
+        <figcaption class="text-sm lg:row-end-2 lg:mt-8">
           <div class="font-semibold text-slate-900">{{ author.name }}</div>
           <div class="mt-1 text-slate-600">{{ author.role }}</div>
         </figcaption>
