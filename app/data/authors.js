@@ -21,7 +21,7 @@ export const authors = [
     slug: 'dan-vega',
     name: 'Dan Vega',
     role: 'Developer Advocate & Author',
-    bio: "a Spring developer advocate, has over 20 years of software development experience. A passionate problem-solver, he actively shares knowledge as a blogger, YouTuber, course creator, and speaker, inspiring fellow developers through continuous learning.",
+    bio: "A Spring Developer Advocate at Broadcom and Java Champion, has over 20 years of software development experience. A passionate problem-solver, he actively shares knowledge as a blogger, YouTuber, course creator, and speaker, inspiring fellow developers through continuous learning.",
     image: '/images/avatars/danvega.png',
     twitter: 'https://twitter.com/therealdanvega',
     bluesky: 'https://bsky.app/profile/danvega.dev',
