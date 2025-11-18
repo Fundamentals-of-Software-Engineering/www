@@ -24,7 +24,8 @@ const workshop = {
   prerequisites: [
     'Working knowledge of at least one programming language',
     'Basic understanding of software development concepts',
-    'Laptop with code editor and Git installed'
+    'Laptop with code editor and Git installed',
+    'Optional: Access to an AI coding assistant (Claude Code, GitHub Copilot, ChatGPT, or similar) for the AI-Assisted Feature Development mini workshop'
   ],
   instructors: [
     {
@@ -77,6 +78,61 @@ const workshop = {
             'What strategies did you use to navigate the code?',
             'How long did it take to understand the basic flow?',
             'What could you apply to your own projects?'
+          ]
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: 'AI-Assisted Feature Development',
+      description: 'Transform how you approach new features by leveraging AI as a collaborative partner, not just a code generator. This hands-on session teaches you to think systematically about feature development while using AI tools effectively.',
+      duration: '10 minutes',
+      repoUrl: 'https://github.com/spring-projects/spring-petclinic',
+      exercises: [
+        {
+          category: 'Prerequisites',
+          tasks: [
+            'Access to an AI coding assistant (Claude Code, GitHub Copilot, ChatGPT, or similar)',
+            'Git and your preferred code editor installed',
+            'Basic familiarity with web applications (any language/framework)',
+            'Clone the Spring Pet Clinic repository: git clone https://github.com/spring-projects/spring-petclinic'
+          ]
+        },
+        {
+          category: 'Part 1: Exploring the Unknown',
+          tasks: [
+            'Using your AI assistant, ask strategic questions to understand the Spring Pet Clinic codebase',
+            'What types of questions help you understand architecture vs. implementation details?',
+            'Practice asking: "How is data persistence handled?" vs. "Show me the Owner entity"',
+            'Experiment with different question styles: high-level overview vs. specific code locations',
+            'Compare AI-assisted exploration with your manual exploration from the previous workshop',
+            'Reflection: What did AI help you discover faster? What did manual exploration teach you better?'
+          ]
+        },
+        {
+          category: 'Part 2: Planning Mode - Weight Tracking Feature',
+          tasks: [
+            'Start with this prompt: "Add an optional weight field (in kg) to pets so we can track their health over time"',
+            'Evaluate the AI\'s initial plan - what assumptions did it make?',
+            'Iterate on requirements: "What edge cases should we consider for weight tracking?"',
+            'Ask architectural questions: "Should we maintain weight history or just current weight?"',
+            'Explore data modeling: "Should weight be nullable for existing pets?"',
+            'Consider API impact: "How does this affect our API contracts?"',
+            'Discuss implementation strategy: "What\'s the migration order for existing data?"',
+            'Risk assessment: "What could break with this change? How do we ensure backward compatibility?"'
+          ]
+        },
+        {
+          category: 'Part 3: Critical Evaluation & Iteration',
+          tasks: [
+            'Review the AI\'s suggested implementation plan with a critical eye',
+            'Challenge assumptions: Does the proposed solution handle all edge cases?',
+            'Ask follow-up questions to refine the approach',
+            'Request alternative approaches: "What are other ways to implement weight history?"',
+            'Discuss testing strategy: "How should we test this feature?"',
+            'Consider user experience: "How should the UI handle weight entry and display?"',
+            'Reflection: How did asking strategic questions improve the final plan?',
+            'Key takeaway: AI is most valuable when you guide it with thoughtful questions'
           ]
         }
       ]
@@ -321,8 +377,8 @@ useHead({
                   </div>
                 </div>
 
-                <!-- Important Note -->
-                <div class="mt-8 rounded-lg border-2 border-amber-200 bg-amber-50 p-4">
+                <!-- Important Note - Only for first mini workshop -->
+                <div v-if="miniWorkshop.id === 1" class="mt-8 rounded-lg border-2 border-amber-200 bg-amber-50 p-4">
                   <div class="flex gap-3">
                     <svg class="h-6 w-6 flex-shrink-0 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -357,14 +413,7 @@ useHead({
                 </div>
               </div>
             </article>
-
-            <!-- Placeholder for future mini workshops -->
-            <div class="rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 p-8 text-center">
-              <p class="text-base text-slate-600">
-                Additional mini workshops will be announced soon
-              </p>
-            </div>
-          </div>
+        </div>
         </div>
       </Container>
     </section>
