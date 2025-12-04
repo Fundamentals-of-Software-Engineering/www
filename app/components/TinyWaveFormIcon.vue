@@ -10,7 +10,7 @@
 defineProps({
   colors: {
     type: Array,
-    default: () => ['fill-indigo-300', 'fill-blue-300', 'fill-indigo-300']
+    default: () => ['fill-fish-blue-300', 'fill-fish-blue-400', 'fill-fish-blue-300']
   }
 })
 </script>

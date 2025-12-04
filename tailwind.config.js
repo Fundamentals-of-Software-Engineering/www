@@ -8,6 +8,32 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'fish-blue': {
+          50: '#f0f5f7',
+          100: '#dae6eb',
+          200: '#b8ced7',
+          300: '#8fadb8',
+          400: '#7a9ba8',
+          500: '#5d8a99',
+          600: '#4a7a8c',
+          700: '#3d6574',
+          800: '#32525e',
+          900: '#27414a',
+        },
+        'fish-gold': {
+          300: '#E8C99B',
+          400: '#D4A574',
+          500: '#C4956A',
+          600: '#B08050',
+        },
+        'fish-coral': {
+          300: '#F0B8A8',
+          400: '#E8A090',
+          500: '#D4897A',
+          600: '#C07868',
+        },
+      },
       fontFamily: {
         sans: ['Satoshi', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         display: ['Cabinet Grotesk', 'sans-serif'],

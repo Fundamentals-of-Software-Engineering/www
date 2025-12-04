@@ -59,7 +59,7 @@
         <section class="mt-10 xl:mt-12">
           <h2 class="flex items-center font-mono text-sm font-medium text-slate-900 leading-7">
             <TinyWaveFormIcon
-              :colors="['fill-indigo-300', 'fill-blue-300']"
+              :colors="['fill-fish-blue-300', 'fill-fish-blue-400']"
               class="h-2.5 w-2.5"
             />
             <span class="ml-2.5">Listen</span>

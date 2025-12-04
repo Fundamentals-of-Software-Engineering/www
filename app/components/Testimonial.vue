@@ -13,7 +13,7 @@
           />
         </div>
         <div class="lg:row-end-1">
-          <div class="flex gap-1 text-blue-600">
+          <div class="flex gap-1 text-fish-blue-600">
             <StarRating />
           </div>
           <blockquote class="mt-4 text-xl font-medium leading-8 text-slate-900">

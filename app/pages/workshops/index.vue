@@ -93,11 +93,11 @@ const pastWorkshops = workshops.filter(w => w.status === 'past')
 
               <!-- Right side: Content -->
               <div class="flex-1">
-                <div class="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+                <div class="inline-flex items-center rounded-full bg-fish-blue-50 px-3 py-1 text-xs font-semibold text-fish-blue-700">
                   {{ workshop.location }}
                 </div>
 
-                <h3 class="mt-3 text-2xl font-bold leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                <h3 class="mt-3 text-2xl font-bold leading-tight text-slate-900 group-hover:text-fish-blue-600 transition-colors">
                   {{ workshop.title }}
                 </h3>
 
@@ -113,7 +113,7 @@ const pastWorkshops = workshops.filter(w => w.status === 'past')
                   <span>{{ workshop.venue }}</span>
                 </div>
 
-                <div class="mt-4 flex items-center gap-2 text-blue-600 font-semibold group-hover:gap-3 transition-all">
+                <div class="mt-4 flex items-center gap-2 text-fish-blue-600 font-semibold group-hover:gap-3 transition-all">
                   <span>Learn more & Register</span>
                   <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -152,7 +152,7 @@ const pastWorkshops = workshops.filter(w => w.status === 'past')
                   {{ workshop.location }}
                 </div>
 
-                <h3 class="mt-3 text-2xl font-bold leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                <h3 class="mt-3 text-2xl font-bold leading-tight text-slate-900 group-hover:text-fish-blue-600 transition-colors">
                   {{ workshop.title }}
                 </h3>
 
@@ -160,7 +160,7 @@ const pastWorkshops = workshops.filter(w => w.status === 'past')
                   {{ workshop.description }}
                 </p>
 
-                <div class="mt-4 flex items-center gap-2 text-blue-600 font-semibold group-hover:gap-3 transition-all">
+                <div class="mt-4 flex items-center gap-2 text-fish-blue-600 font-semibold group-hover:gap-3 transition-all">
                   <span>View details</span>
                   <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

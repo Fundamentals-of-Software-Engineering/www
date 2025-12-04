@@ -1,12 +1,12 @@
 <template>
-  <section id="get-the-book" class="relative overflow-hidden bg-blue-600 py-20 sm:py-32">
+  <section id="get-the-book" class="relative overflow-hidden bg-gradient-to-r from-fish-blue-700 via-fish-blue-600 to-fish-gold-500 py-20 sm:py-32">
     <div class="absolute -top-32 right-[-100vw] bottom-0 left-[-100vw]" />
     <Container class="relative">
       <div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
         <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Get the Book
         </h2>
-        <p class="mt-4 text-lg tracking-tight text-blue-100">
+        <p class="mt-4 text-lg tracking-tight text-fish-blue-100">
           Get immediate access to Fundamentals of Software Engineering through O'Reilly Learning Platform or pre-order your copy on Amazon.
         </p>
 

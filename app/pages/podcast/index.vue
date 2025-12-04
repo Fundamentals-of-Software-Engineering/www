@@ -35,7 +35,7 @@
             <div class="mt-4 flex items-center gap-4">
               <button
                 @click="audioStore.toggle(episode)"
-                class="flex items-center gap-x-3 text-sm font-bold text-blue-600 hover:text-blue-700 active:text-blue-900 transition-colors leading-6"
+                class="flex items-center gap-x-3 text-sm font-bold text-fish-blue-600 hover:text-fish-blue-700 active:text-fish-blue-900 transition-colors leading-6"
                 :aria-label="`${audioStore.currentEpisode?.id === episode.id && audioStore.isPlaying ? 'Pause' : 'Play'} episode ${episode.title}`"
               >
                 <PauseIcon v-if="audioStore.currentEpisode?.id === episode.id && audioStore.isPlaying" class="h-2.5 w-2.5 fill-current" />
@@ -45,7 +45,7 @@
               <span aria-hidden="true" class="text-sm font-bold text-slate-400">/</span>
               <NuxtLink
                 :to="`/podcast/${episode.id}`"
-                class="flex items-center text-sm font-bold text-blue-600 hover:text-blue-700 active:text-blue-900 transition-colors leading-6"
+                class="flex items-center text-sm font-bold text-fish-blue-600 hover:text-fish-blue-700 active:text-fish-blue-900 transition-colors leading-6"
                 :aria-label="`Show notes for episode ${episode.title}`"
               >
                 Show notes

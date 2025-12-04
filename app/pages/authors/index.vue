@@ -32,7 +32,7 @@
                   />
                 </div>
                 <div class="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-                  <p class="mt-8 font-display text-5xl font-extrabold tracking-tight text-blue-600 sm:text-6xl">
+                  <p class="mt-8 font-display text-5xl font-extrabold tracking-tight text-fish-blue-600 sm:text-6xl">
                     {{ author.name }}
                   </p>
                   <p class="mt-4 text-lg tracking-tight text-slate-700">
@@ -46,7 +46,7 @@
                         :href="author.twitter"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-fish-blue-600 transition-colors"
                         :aria-label="`Follow ${author.name} on X/Twitter`"
                       >
                         <svg class="h-5 w-5 fill-current" aria-hidden="true" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@
                         :href="author.bluesky"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-fish-blue-600 transition-colors"
                         :aria-label="`Follow ${author.name} on Bluesky`"
                       >
                         <svg class="h-5 w-5 fill-current" aria-hidden="true" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@
                         :href="author.linkedin"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-fish-blue-600 transition-colors"
                         :aria-label="`Connect with ${author.name} on LinkedIn`"
                       >
                         <svg class="h-5 w-5 fill-current" aria-hidden="true" viewBox="0 0 24 24">
@@ -91,7 +91,7 @@
                         :href="author.github"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-fish-blue-600 transition-colors"
                         :aria-label="`Follow ${author.name} on GitHub`"
                       >
                         <svg class="h-5 w-5 fill-current" aria-hidden="true" viewBox="0 0 24 24">
@@ -106,7 +106,7 @@
                         :href="author.youtube"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-fish-blue-600 transition-colors"
                         :aria-label="`Subscribe to ${author.name} on YouTube`"
                       >
                         <svg class="h-5 w-5 fill-current" aria-hidden="true" viewBox="0 0 24 24">
@@ -121,7 +121,7 @@
                         :href="author.website"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+                        class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-fish-blue-600 transition-colors"
                         :aria-label="`Visit ${author.name}'s website`"
                       >
                         <svg class="h-5 w-5 fill-current" aria-hidden="true" viewBox="0 0 24 24">

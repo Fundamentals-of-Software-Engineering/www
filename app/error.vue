@@ -2,7 +2,7 @@
   <div class="min-h-screen flex items-center justify-center bg-slate-50 px-4">
     <div class="max-w-lg w-full text-center">
       <div class="mb-8">
-        <h1 class="font-display text-9xl font-extrabold text-blue-600">
+        <h1 class="font-display text-9xl font-extrabold text-fish-blue-600">
           {{ error.statusCode }}
         </h1>
         <h2 class="mt-4 font-display text-3xl font-bold text-slate-900">
@@ -16,7 +16,7 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <NuxtLink
           to="/"
-          class="inline-flex justify-center items-center rounded-md bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors"
+          class="inline-flex justify-center items-center rounded-md bg-fish-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-fish-blue-500 transition-colors"
         >
           Go to Homepage
         </NuxtLink>
@@ -30,7 +30,7 @@
 
       <div class="mt-12">
         <p class="text-sm text-slate-500">
-          Need help? <NuxtLink to="/authors" class="text-blue-600 hover:text-blue-500">Contact us</NuxtLink>
+          Need help? <NuxtLink to="/authors" class="text-fish-blue-600 hover:text-fish-blue-500">Contact us</NuxtLink>
         </p>
       </div>
     </div>

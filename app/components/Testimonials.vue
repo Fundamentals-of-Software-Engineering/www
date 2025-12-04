@@ -24,7 +24,7 @@
           </div>
           <!-- Content -->
           <div class="relative z-10">
-            <div class="flex gap-1 text-blue-600">
+            <div class="flex gap-1 text-fish-blue-600">
               <StarRating />
             </div>
             <p class="mt-4 text-base leading-7 text-slate-700">
@@ -39,9 +39,9 @@
       <div class="mt-12 text-center">
         <p class="text-lg text-slate-700">
           Have you read the book? We'd love to feature your testimonial!
-          <a href="mailto:hello@fundamentalsofswe.com" class="font-semibold text-blue-600 hover:text-blue-700">Reach out to us</a>
+          <a href="mailto:hello@fundamentalsofswe.com" class="font-semibold text-fish-blue-600 hover:text-fish-blue-700">Reach out to us</a>
           or share your thoughts using
-          <span class="font-semibold text-blue-600">#fundamentalsofSWE</span>
+          <span class="font-semibold text-fish-blue-600">#fundamentalsofSWE</span>
           on social media.
         </p>
       </div>

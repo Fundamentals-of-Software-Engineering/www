@@ -7,7 +7,7 @@
       :class="[
         'text-xs sm:text-sm/6 font-semibold transition-colors',
         isActive(item.href)
-          ? 'text-blue-600'
+          ? 'text-fish-blue-600'
           : 'text-slate-700 hover:text-slate-900'
       ]"
     >

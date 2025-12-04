@@ -5,7 +5,7 @@
         <header class="mb-8">
           <NuxtLink
             to="/blog"
-            class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors mb-4"
+            class="inline-flex items-center text-sm font-semibold text-fish-blue-600 hover:text-fish-blue-700 transition-colors mb-4"
           >
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -51,14 +51,14 @@
         <div class="prose prose-slate prose-lg max-w-none mt-8
                     prose-headings:font-display prose-headings:font-bold prose-headings:text-slate-900
                     prose-p:text-slate-700 prose-p:leading-relaxed
-                    prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700 hover:prose-a:underline
+                    prose-a:text-fish-blue-600 prose-a:no-underline hover:prose-a:text-fish-blue-700 hover:prose-a:underline
                     prose-strong:text-slate-900 prose-strong:font-semibold
                     prose-ul:list-disc prose-ol:list-decimal
                     prose-li:text-slate-700 prose-li:marker:text-slate-400
                     prose-code:text-slate-900 prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-mono prose-code:text-sm
                     prose-code:before:content-none prose-code:after:content-none
                     prose-pre:bg-slate-900 prose-pre:text-slate-100
-                    prose-blockquote:border-l-blue-600 prose-blockquote:text-slate-700
+                    prose-blockquote:border-l-fish-blue-600 prose-blockquote:text-slate-700
                     prose-hr:border-slate-200
                     prose-img:rounded-lg">
           <ContentRenderer :value="post" />

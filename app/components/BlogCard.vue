@@ -14,7 +14,7 @@
       {{ formatDate(publishedAt) }}
     </time>
 
-    <h2 class="mt-3 text-2xl font-bold text-slate-900 leading-tight group-hover:text-blue-600 transition-colors">
+    <h2 class="mt-3 text-2xl font-bold text-slate-900 leading-tight group-hover:text-fish-blue-600 transition-colors">
       {{ title }}
     </h2>
 

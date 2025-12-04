@@ -17,7 +17,7 @@
         <div class="mt-12 text-center">
           <NuxtLink
             to="/authors"
-            class="inline-flex items-center rounded-full bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
+            class="inline-flex items-center rounded-full bg-fish-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-fish-blue-700 transition-colors"
           >
             Learn more about the authors
             <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
