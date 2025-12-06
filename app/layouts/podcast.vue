@@ -36,7 +36,7 @@
         >
           <NuxtImg
             class="w-full"
-            src="/images/podcast_poster.png"
+            src="/images/podcast_cover.png"
             alt="FOSE Podcast Cover"
             width="400"
             height="400"
