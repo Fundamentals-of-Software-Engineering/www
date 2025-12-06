@@ -26,7 +26,7 @@
       </svg>
     </a>
     <a
-      href="https://www.youtube.com/@FundamentalsSWE"
+      href="https://www.youtube.com/@FundamentalsofSWE"
       target="_blank"
       rel="noopener noreferrer"
       class="text-slate-700 hover:text-slate-900 transition-colors"
