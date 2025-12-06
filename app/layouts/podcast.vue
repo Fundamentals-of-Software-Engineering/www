@@ -6,7 +6,7 @@
         <div class="flex flex-col sm:flex-row h-auto sm:h-16 py-4 sm:py-0 items-center justify-center sm:justify-between gap-4 sm:gap-0">
           <div class="flex items-center">
             <NuxtLink to="/" class="text-xl font-bold text-slate-900">
-              <NuxtImg src="/images/fundamentals_of_software_engineering_logo.png" alt="logo" class="h-10" />
+              <NuxtImg src="/images/fose_logo.png" alt="logo" class="h-10" />
             </NuxtLink>
           </div>
           <MainNavigation />
