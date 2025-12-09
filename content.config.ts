@@ -5,6 +5,10 @@ export default defineContentConfig({
     blog: defineCollection({
       type: 'page',
       source: 'blog/**/*.md'
+    }),
+    podcast: defineCollection({
+      type: 'page',
+      source: 'podcast/**/*.md'
     })
   }
 })

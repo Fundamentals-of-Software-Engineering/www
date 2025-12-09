@@ -38,7 +38,7 @@ npm run postinstall      # Prepare Nuxt (runs automatically after npm install)
 app/
 ├── components/        # Vue components (auto-imported)
 ├── composables/       # Vue composables like useWebVitals
-├── data/             # Static data files (authors.js, episodes.js)
+├── data/             # Static data files (authors.js)
 ├── layouts/          # Layout wrappers (default.vue, podcast.vue)
 ├── pages/            # File-based routing
 │   ├── index.vue     # Homepage
@@ -47,8 +47,9 @@ app/
 ├── stores/           # Pinia stores (audio.js)
 └── app.vue           # Root app component
 
-server/
-└── routes/           # Server routes (rss.xml.ts)
+content/
+├── blog/             # Blog posts (Markdown)
+└── podcast/          # Podcast episodes (Markdown)
 
 public/               # Static assets
 └── images/           # Book covers, avatars, etc.
@@ -67,12 +68,11 @@ The podcast audio player is built with a centralized Pinia store pattern:
 The audio element is shared globally - only one audio element exists, managed by the store.
 
 #### Data Management
-Static data is defined in plain JavaScript files:
+- `app/data/authors.js`: Author profiles with social links (plain JavaScript)
+- `content/blog/`: Blog posts as Markdown files with frontmatter
+- `content/podcast/`: Podcast episodes as Markdown files with frontmatter
 
-- `app/data/authors.js`: Author profiles with social links
-- `app/data/episodes.js`: Podcast episodes with metadata
-
-**Important**: Episode data is duplicated in `server/routes/rss.xml.ts` because server routes cannot easily import from the `app/` directory. When adding episodes, update both files.
+Content is managed via Nuxt Content v3. Both blog and podcast use `queryCollection()` API to fetch content.
 
 #### Layouts
 Two layouts exist:
@@ -98,15 +98,27 @@ The homepage includes comprehensive Book schema markup.
 - Tailwind Typography plugin enabled for prose content
 - Container component used for max-width constraints
 
-### RSS Feed
-The RSS feed at `/rss.xml` is server-rendered via `server/routes/rss.xml.ts`. It includes iTunes podcast tags and enclosure elements for audio files.
-
 ## Adding Content
 
 ### Adding a New Episode
-1. Add episode object to `app/data/episodes.js`
-2. **Also update** the episodes array in `server/routes/rss.xml.ts` (required for RSS feed)
-3. Episode properties: `id`, `title`, `published` (Date), `description`, `content` (HTML), `audioUrl`, `videoId` (optional)
+1. Create a new Markdown file in `content/podcast/` named with the episode number (e.g., `1.md`, `2.md`)
+2. Add frontmatter with required fields and write show notes in Markdown body
+
+**Episode frontmatter schema:**
+```yaml
+---
+episodeId: 1                    # Episode number (used for URL: /podcast/1)
+title: "01: Episode Title"      # Full episode title
+description: "Short description for listing page"
+publishedAt: 2025-11-15         # Publication date (YYYY-MM-DD)
+audioUrl: "/podcast/episodes/001.mp3"  # Audio file URL
+videoId: "abc123"               # Optional YouTube video ID
+---
+
+## Show Notes
+
+Write full show notes here in Markdown...
+```
 
 ### Adding a New Author
 1. Update `app/data/authors.js` with author object

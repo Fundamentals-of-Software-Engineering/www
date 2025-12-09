@@ -65,23 +65,45 @@
             <span class="ml-2.5">Listen</span>
           </h2>
           <div class="mt-4 flex flex-col gap-4">
-            <a href="#" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
+            <a href="https://open.spotify.com/show/3XJSOx797dOhJd0a97IZ7L" target="_blank" rel="noopener noreferrer" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
               <svg class="h-8 w-8 fill-slate-400 group-hover:fill-slate-600" viewBox="0 0 32 32">
                 <path d="M15.8 3a12.8 12.8 0 1 0 0 25.6 12.8 12.8 0 0 0 0-25.6Zm5.87 18.461a.8.8 0 0 1-1.097.266c-3.006-1.837-6.787-2.252-11.244-1.234a.796.796 0 1 1-.355-1.555c4.875-1.115 9.058-.635 12.432 1.427a.8.8 0 0 1 .265 1.096Zm1.565-3.485a.999.999 0 0 1-1.371.33c-3.44-2.116-8.685-2.728-12.755-1.493a1 1 0 0 1-.58-1.91c4.65-1.41 10.428-.726 14.378 1.7a1 1 0 0 1 .33 1.375l-.002-.002Zm.137-3.629c-4.127-2.45-10.933-2.675-14.871-1.478a1.196 1.196 0 1 1-.695-2.291c4.52-1.374 12.037-1.107 16.785 1.711a1.197 1.197 0 1 1-1.221 2.06" />
               </svg>
               <span class="ml-3">Spotify</span>
             </a>
-            <a href="#" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
+            <a href="https://podcasts.apple.com/podcast/fundamentals-of-software-engineering/id1860072717" target="_blank" rel="noopener noreferrer" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
               <svg class="h-8 w-8 fill-slate-400 group-hover:fill-slate-600" viewBox="0 0 32 32">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M27.528 24.8c-.232.592-.768 1.424-1.536 2.016-.44.336-.968.664-1.688.88-.768.232-1.72.304-2.904.304H10.6c-1.184 0-2.128-.08-2.904-.304a4.99 4.99 0 0 1-1.688-.88c-.76-.584-1.304-1.424-1.536-2.016C4.008 23.608 4 22.256 4 21.4V10.6c0-.856.008-2.208.472-3.4.232-.592.768-1.424 1.536-2.016.44-.336.968-.664 1.688-.88C8.472 4.08 9.416 4 10.6 4h10.8c1.184 0 2.128.08 2.904.304a4.99 4.99 0 0 1 1.688.88c.76.584 1.304 1.424 1.536 2.016C28 8.392 28 9.752 28 10.6v10.8c0 .856-.008 2.208-.472 3.4Zm-9.471-6.312a1.069 1.069 0 0 0-.32-.688c-.36-.376-.992-.624-1.736-.624-.745 0-1.377.24-1.737.624-.183.2-.287.4-.32.688-.063.558-.024 1.036.04 1.807v.009c.065.736.184 1.72.336 2.712.112.712.2 1.096.28 1.368.136.448.625.832 1.4.832.776 0 1.273-.392 1.4-.832.08-.272.169-.656.28-1.368.152-1 .273-1.976.337-2.712.072-.776.104-1.256.04-1.816ZM16 16.375c1.088 0 1.968-.88 1.968-1.967 0-1.08-.88-1.968-1.968-1.968s-1.968.88-1.968 1.968.88 1.967 1.968 1.967Zm-.024-9.719c-4.592.016-8.352 3.744-8.416 8.336-.048 3.72 2.328 6.904 5.648 8.072.08.032.16-.04.152-.12a35.046 35.046 0 0 0-.041-.288c-.029-.192-.057-.384-.079-.576a.317.317 0 0 0-.168-.232 7.365 7.365 0 0 1-4.424-6.824c.04-4 3.304-7.256 7.296-7.288 4.088-.032 7.424 3.28 7.424 7.36 0 3.016-1.824 5.608-4.424 6.752a.272.272 0 0 0-.168.232l-.12.864c-.016.088.072.152.152.12a8.448 8.448 0 0 0 5.648-7.968c-.016-4.656-3.816-8.448-8.48-8.44Zm-5.624 8.376c.04-2.992 2.44-5.464 5.432-5.576 3.216-.128 5.88 2.456 5.872 5.64a5.661 5.661 0 0 1-2.472 4.672c-.08.056-.184-.008-.176-.096.016-.344.024-.648.008-.96 0-.104.04-.2.112-.272a4.584 4.584 0 0 0 1.448-3.336 4.574 4.574 0 0 0-4.752-4.568 4.585 4.585 0 0 0-4.392 4.448 4.574 4.574 0 0 0 1.448 3.456c.08.072.12.168.112.272-.016.32-.016.624.008.968 0 .088-.104.144-.176.096a5.65 5.65 0 0 1-2.472-4.744Z" />
               </svg>
-              <span class="ml-3">Apple Podcast</span>
+              <span class="ml-3">Apple Podcasts</span>
             </a>
-            <a href="/rss.xml" target="_blank" rel="noopener noreferrer" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
-              <svg class="h-8 w-8 fill-slate-400 group-hover:fill-slate-600" viewBox="0 0 32 32">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 4h15A4.5 4.5 0 0 1 28 8.5v15a4.5 4.5 0 0 1-4.5 4.5h-15A4.5 4.5 0 0 1 4 23.5v-15A4.5 4.5 0 0 1 8.5 4ZM13 22a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-6-6a9 9 0 0 1 9 9h3A12 12 0 0 0 7 13v3Zm5.74-4.858A15 15 0 0 0 7 10V7a18 18 0 0 1 18 18h-3a15 15 0 0 0-9.26-13.858Z" />
+            <a href="https://music.amazon.com/podcasts/1319fa1f-5eab-4e51-bff1-abef85809235" target="_blank" rel="noopener noreferrer" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
+              <svg class="h-8 w-8 stroke-slate-400 group-hover:stroke-slate-600" viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="21.5"/>
+                <path d="M32.2807,29.7009c1.112-.451,3.0916-1.0492,3.6872-.3272.6446.7814-.17,2.4769-.92,3.7942"/>
+                <path d="M11.7984,30.2234c1.7586,1.3965,6.9532,3.5343,12.4876,3.5343a17.0029,17.0029,0,0,0,10.1671-3.0789"/>
+                <path d="M20.4043,20.125v3.3a2,2,0,0,0,2,2h0a2,2,0,0,0,2-2v-3.3"/>
+                <line x1="24.4043" y1="23.425" x2="24.4043" y2="25.425"/>
+                <path d="M10.4,22.225a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2v3.2"/>
+                <line x1="10.4001" y1="20.225" x2="10.4001" y2="25.425"/>
+                <path d="M14.4,22.225a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2v3.2"/>
+                <circle class="fill-slate-400 group-hover:fill-slate-600" cx="31.88" cy="17.675" r="0.7" stroke="none"/>
+                <line x1="31.88" y1="20.125" x2="31.88" y2="25.425"/>
+                <path d="M26.5407,24.9733a2.249,2.249,0,0,0,1.6448.4472h.4487a1.3236,1.3236,0,0,0,1.3222-1.325h0a1.3236,1.3236,0,0,0-1.3222-1.325h-.8974a1.3235,1.3235,0,0,1-1.3221-1.325h0a1.3235,1.3235,0,0,1,1.3221-1.325h.4487a2.2494,2.2494,0,0,1,1.6449.4472"/>
+                <path d="M37.6,24.4176a1.9991,1.9991,0,0,1-1.7366,1.0074h0a2,2,0,0,1-2-2v-1.3a2,2,0,0,1,2-2h0a1.9989,1.9989,0,0,1,1.7346,1.0039"/>
               </svg>
-              <span class="ml-3">RSS Feed</span>
+              <span class="ml-3">Amazon Music</span>
+            </a>
+            <a href="https://pca.st/itunes/1860072717" target="_blank" rel="noopener noreferrer" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
+              <svg class="h-8 w-8" viewBox="0 0 256 256">
+                <rect width="256" height="256" rx="28" class="fill-slate-400 group-hover:fill-slate-600"/>
+                <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+                  <path d="M 128 48 A 80 80 0 1 1 48 128" stroke-width="26"/>
+                  <path d="M 128 88 A 40 40 0 1 1 88 128" stroke-width="22"/>
+                  <circle cx="128" cy="128" r="14" fill="#FFFFFF" stroke="none"/>
+                </g>
+              </svg>
+              <span class="ml-3">Pocket Casts</span>
             </a>
           </div>
         </section>
