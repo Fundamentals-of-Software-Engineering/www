@@ -23,7 +23,7 @@ These aren't trendy frameworks that become obsolete - these are timeless fundame
 ## Get the Book
 
 - **O'Reilly Learning Platform**: [Immediate access](https://learning.oreilly.com/library/view/fundamentals-of-software/9781098143220/)
-- **Amazon**: [Pre-order now](https://www.amazon.com/Fundamentals-Software-Engineering-Coder-Engineer/dp/109814323X/)
+- **Amazon**: [Order now](https://www.amazon.com/Fundamentals-Software-Engineering-Coder-Engineer/dp/109814323X/)
 
 ## Podcast
 
