@@ -7,7 +7,7 @@
           Get the Book
         </h2>
         <p class="mt-4 text-lg tracking-tight text-fish-blue-100">
-          Get immediate access to Fundamentals of Software Engineering through O'Reilly Learning Platform or pre-order your copy on Amazon.
+          Get immediate access to Fundamentals of Software Engineering through O'Reilly Learning Platform or order your copy on Amazon.
         </p>
 
         <div class="mt-10 grid gap-8 sm:grid-cols-2">
@@ -30,13 +30,13 @@
             </div>
           </div>
 
-          <!-- Amazon Pre-order -->
+          <!-- Amazon -->
           <div class="rounded-2xl bg-white p-8 shadow-xl">
             <h3 class="font-display text-2xl font-bold text-slate-900">
               Amazon
             </h3>
             <p class="mt-4 text-base text-slate-600">
-              Pre-order your copy now on Amazon and have it delivered as soon as it's available.
+              Order your copy now on Amazon and have it delivered to your door.
             </p>
             <div class="mt-8">
               <Button
@@ -44,7 +44,7 @@
                 color="blue"
                 class="w-full"
               >
-                Pre-order on Amazon
+                Order on Amazon
               </Button>
             </div>
           </div>
