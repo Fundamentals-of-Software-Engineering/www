@@ -5,6 +5,11 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@pinia/nuxt', '@nuxt/image', '@nuxtjs/sitemap', '@nuxt/content'],
 
+  runtimeConfig: {
+    transistorApiKey: process.env.TRANSISTOR_API_KEY,
+    transistorShowId: process.env.TRANSISTOR_SHOW_ID,
+  },
+
   fonts: {
     families: [
       { name: 'Inter', provider: 'google' },
@@ -69,6 +74,10 @@ export default defineNuxtConfig({
           'Strict-Transport-Security': 'max-age=31536000; includeSubDomains'
         }
       },
+      // 301 redirects for old episode URLs (update slugs after verifying with Transistor)
+      '/podcast/1': { redirect: { to: '/podcast/hello-fundamentals-of-swe', statusCode: 301 } },
+      '/podcast/2': { redirect: { to: '/podcast/avoiding-burnout', statusCode: 301 } },
+      '/podcast/3': { redirect: { to: '/podcast/will-ai-replace-software-developers', statusCode: 301 } },
       // Cache static assets for 1 year
       '/images/**': {
         headers: {

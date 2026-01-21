@@ -6,45 +6,45 @@
     <div class="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100">
       <article
         v-for="episode in episodes"
-        :key="episode.meta?.episodeId"
-        :aria-labelledby="`episode-${episode.meta?.episodeId}-title`"
+        :key="episode.id"
+        :aria-labelledby="`episode-${episode.id}-title`"
         class="py-10 sm:py-12"
       >
         <Container>
           <div class="flex flex-col items-start">
             <h2
-              :id="`episode-${episode.meta?.episodeId}-title`"
+              :id="`episode-${episode.id}-title`"
               class="mt-2 text-lg font-bold text-slate-900"
             >
               <NuxtLink
-                :to="`/podcast/${episode.meta?.episodeId}`"
+                :to="`/podcast/${episode.slug}`"
                 class="hover:text-slate-600 transition-colors"
               >
                 {{ episode.title }}
               </NuxtLink>
             </h2>
             <time
-              :datetime="episode.meta?.publishedAt"
+              :datetime="episode.publishedAt"
               class="order-first font-mono text-sm text-slate-500 leading-7"
             >
-              {{ formatDate(episode.meta?.publishedAt) }}
+              {{ episode.formattedDate }}
             </time>
             <p class="mt-1 text-base text-slate-700 leading-7">
-              {{ episode.description }}
+              {{ getEpisodeDescription(episode) }}
             </p>
             <div class="mt-4 flex items-center gap-4">
               <button
                 @click="audioStore.toggle(getAudioEpisode(episode))"
                 class="flex items-center gap-x-3 text-sm font-bold text-fish-blue-600 hover:text-fish-blue-700 active:text-fish-blue-900 transition-colors leading-6"
-                :aria-label="`${audioStore.currentEpisode?.id === episode.meta?.episodeId && audioStore.isPlaying ? 'Pause' : 'Play'} episode ${episode.title}`"
+                :aria-label="`${audioStore.currentEpisode?.id === episode.id && audioStore.isPlaying ? 'Pause' : 'Play'} episode ${episode.title}`"
               >
-                <PauseIcon v-if="audioStore.currentEpisode?.id === episode.meta?.episodeId && audioStore.isPlaying" class="h-2.5 w-2.5 fill-current" />
+                <PauseIcon v-if="audioStore.currentEpisode?.id === episode.id && audioStore.isPlaying" class="h-2.5 w-2.5 fill-current" />
                 <PlayIcon v-else class="h-2.5 w-2.5 fill-current" />
                 <span aria-hidden="true">Listen</span>
               </button>
               <span aria-hidden="true" class="text-sm font-bold text-slate-400">/</span>
               <NuxtLink
-                :to="`/podcast/${episode.meta?.episodeId}`"
+                :to="`/podcast/${episode.slug}`"
                 class="flex items-center text-sm font-bold text-fish-blue-600 hover:text-fish-blue-700 active:text-fish-blue-900 transition-colors leading-6"
                 :aria-label="`Show notes for episode ${episode.title}`"
               >
@@ -68,39 +68,34 @@ definePageMeta({
 const audioStore = useAudioStore()
 const siteUrl = 'https://fundamentalsofswe.com'
 
-// Query episodes from Nuxt Content
-const { data: rawEpisodes } = await useAsyncData('podcast-episodes', () =>
-  queryCollection('podcast')
-    .all()
-)
+// Fetch episodes from API
+const { data } = await useFetch('/api/episodes')
 
 // Sort episodes by publishedAt (newest first)
 const episodes = computed(() => {
-  if (!rawEpisodes.value) return []
-  return [...rawEpisodes.value].sort((a, b) => {
-    const dateA = new Date(a.meta?.publishedAt || 0)
-    const dateB = new Date(b.meta?.publishedAt || 0)
+  if (!data.value?.episodes) return []
+  return [...data.value.episodes].sort((a, b) => {
+    const dateA = new Date(a.publishedAt || 0)
+    const dateB = new Date(b.publishedAt || 0)
     return dateB.getTime() - dateA.getTime()
   })
 })
 
-const formatDate = (dateString) => {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC'
-  }).format(date)
-}
-
 // Map episode for audio store (needs id, title, audioUrl)
 const getAudioEpisode = (episode) => ({
-  id: episode.meta?.episodeId,
+  id: episode.id,
   title: episode.title,
-  audioUrl: episode.meta?.audioUrl
+  audioUrl: episode.audioUrl
 })
+
+// Get episode description with fallback to truncated description
+const getEpisodeDescription = (episode) => {
+  if (episode.summary) return episode.summary
+  if (!episode.description) return ''
+  // Strip HTML and truncate
+  const text = episode.description.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
+  return text.length > 200 ? text.substring(0, 200) + '...' : text
+}
 
 useSeoMeta({
   title: 'FOSE Podcast - Fundamentals of Software Engineering',
