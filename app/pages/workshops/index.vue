@@ -10,6 +10,18 @@ const workshops = [
     location: 'QCon San Francisco 2025',
     venue: 'Seacliff CD, Hyatt Regency San Francisco',
     description: 'This intensive workshop bridges fundamental programming skills with expertise needed to work alongside AI tools through a balanced mix of conceptual teaching and hands-on exercises.',
+    status: 'past'
+  },
+  {
+    id: 2,
+    slug: 'devnexus-2026',
+    title: 'Fundamentals of Software Engineering in the Age of AI',
+    date: new Date('2026-03-04T09:00:00-05:00'),
+    time: '9:00 AM EST',
+    duration: '8 hours',
+    location: 'DevNexus 2026',
+    venue: 'Georgia World Congress Center, Atlanta',
+    description: 'This intensive workshop bridges fundamental programming skills with expertise needed to work alongside AI tools through a balanced mix of conceptual teaching and hands-on exercises.',
     status: 'upcoming'
   }
 ]
@@ -48,7 +60,7 @@ const pastWorkshops = workshops.filter(w => w.status === 'past')
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32">
+    <section class="scroll-mt-14 pt-16 pb-8 sm:scroll-mt-32 sm:pt-20 sm:pb-10 lg:pt-32 lg:pb-12">
       <Container>
         <div class="max-w-3xl">
           <h1 class="font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
@@ -62,7 +74,7 @@ const pastWorkshops = workshops.filter(w => w.status === 'past')
     </section>
 
     <!-- Upcoming Workshops -->
-    <section v-if="upcomingWorkshops.length > 0" class="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20">
+    <section v-if="upcomingWorkshops.length > 0" class="scroll-mt-14 py-8 sm:scroll-mt-32 sm:py-12">
       <Container>
         <h2 class="font-display text-3xl font-extrabold tracking-tight text-slate-900">
           Upcoming Workshops
