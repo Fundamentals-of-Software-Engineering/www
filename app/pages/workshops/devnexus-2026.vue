@@ -221,7 +221,7 @@ useHead({
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-              <p class="text-base leading-7 text-slate-700">Optional: Access to an AI coding assistant (Claude Code, GitHub Copilot, ChatGPT, or similar) for the AI-Assisted Feature Development mini workshop</p>
+              <p class="text-base leading-7 text-slate-700">Optional: Access to an AI coding assistant (Claude Code, GitHub Copilot, ChatGPT, or similar)</p>
             </li>
           </ul>
         </div>
@@ -528,22 +528,22 @@ useHead({
               </div>
             </article>
 
-            <!-- Mini Workshop 3: AI-Assisted Feature Development -->
+            <!-- Mini Workshop 3: Writing Code -->
             <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <div class="p-8">
                 <!-- Header -->
                 <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <h3 class="flex-1 text-2xl font-bold leading-tight text-slate-900">
-                    AI-Assisted Feature Development
+                    Writing Clean Code: Identifying & Fixing Code Smells
                   </h3>
                   <span class="inline-flex items-center rounded-full bg-fish-blue-100 px-3 py-1 text-sm font-semibold text-fish-blue-700">
-                    10 minutes
+                    15 minutes
                   </span>
                 </div>
 
                 <!-- Description -->
                 <p class="mt-4 text-base leading-7 text-slate-700">
-                  Transform how you approach new features by leveraging AI as a collaborative partner, not just a code generator. This hands-on session teaches you to think systematically about feature development while using AI tools effectively.
+                  In this hands-on exercise, you'll review a small Java codebase containing intentional code smells across six clean code categories. You'll practice identifying problems, refactoring code, and discussing trade-offs with your peers.
                 </p>
 
                 <!-- Repository Link -->
@@ -554,15 +554,46 @@ useHead({
                     </svg>
                     <div class="flex-1">
                       <h4 class="text-sm font-semibold text-fish-blue-900">Repository</h4>
-                      <a href="https://github.com/spring-projects/spring-petclinic" target="_blank" rel="noopener noreferrer" class="mt-1 block text-sm text-fish-blue-700 hover:text-fish-blue-800 hover:underline break-all">
-                        https://github.com/spring-projects/spring-petclinic
+                      <a href="https://github.com/Fundamentals-of-Software-Engineering/workshop/tree/main/writing-code-lab" target="_blank" rel="noopener noreferrer" class="mt-1 block text-sm text-fish-blue-700 hover:text-fish-blue-800 hover:underline break-all">
+                        https://github.com/Fundamentals-of-Software-Engineering/workshop/tree/main/writing-code-lab
                       </a>
                       <p class="mt-2 text-sm text-fish-blue-900">
                         <strong>Clone the repository:</strong>
                       </p>
                       <code class="mt-1 block rounded bg-white px-3 py-2 text-xs text-slate-800 border border-fish-blue-200">
-                        git clone https://github.com/spring-projects/spring-petclinic
+                        git clone https://github.com/Fundamentals-of-Software-Engineering/workshop.git
                       </code>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Code Smell Categories -->
+                <div class="mt-8 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                  <h4 class="text-sm font-semibold text-slate-900">Six Clean Code Categories to Look For</h4>
+                  <div class="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                    <div class="flex items-center gap-2 text-sm text-slate-700">
+                      <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-fish-blue-100 text-xs font-bold text-fish-blue-700">1</span>
+                      Meaningful names that reveal intent
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-slate-700">
+                      <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-fish-blue-100 text-xs font-bold text-fish-blue-700">2</span>
+                      Single responsibility principle
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-slate-700">
+                      <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-fish-blue-100 text-xs font-bold text-fish-blue-700">3</span>
+                      DRY (Don't Repeat Yourself)
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-slate-700">
+                      <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-fish-blue-100 text-xs font-bold text-fish-blue-700">4</span>
+                      Explanatory vs. restating comments
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-slate-700">
+                      <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-fish-blue-100 text-xs font-bold text-fish-blue-700">5</span>
+                      Formatting that matches control flow
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-slate-700">
+                      <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-fish-blue-100 text-xs font-bold text-fish-blue-700">6</span>
+                      Composition over inappropriate inheritance
                     </div>
                   </div>
                 </div>
@@ -570,131 +601,85 @@ useHead({
                 <!-- Exercises -->
                 <div class="mt-8 space-y-6">
                   <div>
-                    <h4 class="text-lg font-bold text-slate-900">Prerequisites</h4>
+                    <h4 class="text-lg font-bold text-slate-900">Part 1: Identify Code Smells (5 minutes)</h4>
                     <ul class="mt-3 space-y-2">
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Access to an AI coding assistant (Claude Code, GitHub Copilot, ChatGPT, or similar)</span>
+                        <span class="text-sm leading-6 text-slate-700">Open the <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">src/</code> folder and review all five Java files: <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">Animal.java</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">Dog.java</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">Fish.java</code>, <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTracker.java</code>, and <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTrackerUtils.java</code></span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Git and your preferred code editor installed</span>
+                        <span class="text-sm leading-6 text-slate-700">For each file, identify as many code smells as you can from the six categories above</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Basic familiarity with web applications (any language/framework)</span>
+                        <span class="text-sm leading-6 text-slate-700">Pay special attention to the class hierarchy: Does it make sense for <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">Fish</code> to extend <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">Animal</code> which assumes all animals have fur?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Clone the Spring Pet Clinic repository: git clone https://github.com/spring-projects/spring-petclinic</span>
+                        <span class="text-sm leading-6 text-slate-700">Look for logic errors: Check the loop in <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTracker</code> carefully - does the summation work correctly?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Examine <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTrackerUtils</code>: Do the method names and documentation match what the code actually does?</span>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 class="text-lg font-bold text-slate-900">Part 1: Exploring the Unknown</h4>
+                    <h4 class="text-lg font-bold text-slate-900">Part 2: Refactor (8 minutes)</h4>
                     <ul class="mt-3 space-y-2">
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Using your AI assistant, ask strategic questions to understand the Spring Pet Clinic codebase</span>
+                        <span class="text-sm leading-6 text-slate-700">Pick 2-3 code smells you identified and refactor them</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">What types of questions help you understand architecture vs. implementation details?</span>
+                        <span class="text-sm leading-6 text-slate-700">Rename methods and variables to clearly communicate their intent</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Practice asking: "How is data persistence handled?" vs. "Show me the Owner entity"</span>
+                        <span class="text-sm leading-6 text-slate-700">Break apart methods that have multiple responsibilities</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Experiment with different question styles: high-level overview vs. specific code locations</span>
+                        <span class="text-sm leading-6 text-slate-700">Fix the class hierarchy to use composition instead of inappropriate inheritance</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Compare AI-assisted exploration with your manual exploration from the previous workshop</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Reflection: What did AI help you discover faster? What did manual exploration teach you better?</span>
+                        <span class="text-sm leading-6 text-slate-700">Update comments to explain <em>why</em>, not <em>what</em></span>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 class="text-lg font-bold text-slate-900">Part 2: Planning Mode - Weight Tracking Feature</h4>
+                    <h4 class="text-lg font-bold text-slate-900">Part 3: Discuss (2 minutes)</h4>
                     <ul class="mt-3 space-y-2">
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Start with this prompt: "Add an optional weight field (in kg) to pets so we can track their health over time"</span>
+                        <span class="text-sm leading-6 text-slate-700">Compare your findings with a neighbor - did they spot smells you missed?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Evaluate the AI's initial plan - what assumptions did it make?</span>
+                        <span class="text-sm leading-6 text-slate-700">Discuss different refactoring approaches - there's often more than one valid solution</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Iterate on requirements: "What edge cases should we consider for weight tracking?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Ask architectural questions: "Should we maintain weight history or just current weight?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Explore data modeling: "Should weight be nullable for existing pets?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Consider API impact: "How does this affect our API contracts?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Discuss implementation strategy: "What's the migration order for existing data?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Risk assessment: "What could break with this change? How do we ensure backward compatibility?"</span>
+                        <span class="text-sm leading-6 text-slate-700">Reflection: Which code smells were easiest to spot? Which were most subtle?</span>
                       </li>
                     </ul>
                   </div>
+                </div>
 
-                  <div>
-                    <h4 class="text-lg font-bold text-slate-900">Part 3: Critical Evaluation & Iteration</h4>
-                    <ul class="mt-3 space-y-2">
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Review the AI's suggested implementation plan with a critical eye</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Challenge assumptions: Does the proposed solution handle all edge cases?</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Ask follow-up questions to refine the approach</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Request alternative approaches: "What are other ways to implement weight history?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Discuss testing strategy: "How should we test this feature?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Consider user experience: "How should the UI handle weight entry and display?"</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Reflection: How did asking strategic questions improve the final plan?</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Key takeaway: AI is most valuable when you guide it with thoughtful questions</span>
-                      </li>
-                    </ul>
+                <!-- Solution Note -->
+                <div class="mt-8 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                  <div class="flex gap-3">
+                    <svg class="h-5 w-5 flex-shrink-0 text-slate-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-sm leading-6 text-slate-700">
+                      <strong>After the exercise:</strong> A solution branch is available in the repository for comparison. Try to complete the exercise before checking the solution!
+                    </p>
                   </div>
                 </div>
               </div>
