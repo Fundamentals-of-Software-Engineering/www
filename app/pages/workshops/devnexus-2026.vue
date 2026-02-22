@@ -113,7 +113,7 @@ useHead({
           </h2>
           <div class="prose prose-slate mt-6 text-base leading-7 text-slate-700">
             <p>This intensive workshop bridges fundamental programming skills with the expertise needed to work alongside AI tools. Participants engage in a balanced mix of conceptual teaching and hands-on exercises combining traditional and AI-assisted approaches to reinforce practical software engineering principles.</p>
-            <p>Learn to transition from programmer to software engineer, create maintainable code, and master AI code assistance while critically evaluating outputs. Through hands-on mini-workshops, you'll gain practical experience with modern development workflows and build a professional growth roadmap in the AI era.</p>
+            <p>Learn to transition from programmer to software engineer, create maintainable code, and master AI code assistance while critically evaluating outputs. Through hands-on labs, you'll gain practical experience with modern development workflows and build a professional growth roadmap in the AI era.</p>
           </div>
         </div>
       </Container>
@@ -223,24 +223,32 @@ useHead({
               </div>
               <p class="text-base leading-7 text-slate-700">Optional: Access to an AI coding assistant (Claude Code, GitHub Copilot, ChatGPT, or similar)</p>
             </li>
+            <li class="flex gap-3">
+              <div class="flex-shrink-0">
+                <svg class="h-6 w-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              <p class="text-base leading-7 text-slate-700">Optional: A Google account to use <a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer" class="text-fish-blue-600 underline hover:no-underline">NotebookLM</a></p>
+            </li>
           </ul>
         </div>
       </Container>
     </section>
 
-    <!-- Mini Workshops -->
+    <!-- Labs -->
     <section class="scroll-mt-14 border-t border-slate-100 py-16 sm:scroll-mt-32 sm:py-20">
       <Container>
         <div class="max-w-4xl">
           <h2 class="font-display text-3xl font-extrabold tracking-tight text-slate-900">
-            Mini Workshops
+            Labs
           </h2>
           <p class="mt-4 text-lg leading-8 text-slate-700">
-            This workshop is structured as a series of focused, hands-on mini-workshops, each exploring a different aspect of modern software engineering.
+            This workshop is structured as a series of focused, hands-on labs, each exploring a different aspect of modern software engineering.
           </p>
 
           <div class="mt-12 space-y-8">
-            <!-- Mini Workshop 1: Reading Code -->
+            <!-- Lab 1: Reading Code -->
             <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <div class="p-8">
                 <!-- Header -->
@@ -255,7 +263,7 @@ useHead({
 
                 <!-- Description -->
                 <p class="mt-4 text-base leading-7 text-slate-700">
-                  In this hands-on exercise, you'll explore the Spring PetClinic application, a real-world codebase that may be in a language you've never used before. This is intentional! We'll practice the fundamental skill of reading and understanding unfamiliar code, a critical ability for every software engineer.
+                  You'll explore the Spring PetClinic application, a real world codebase that may be in a language you've never used before. This is intentional! The goal is to practice reading and understanding unfamiliar code, one of the most important skills in software engineering.
                 </p>
 
                 <!-- Repository Link -->
@@ -288,7 +296,7 @@ useHead({
                     <div>
                       <p class="text-sm font-semibold text-amber-900">Important: No AI Tools for This Exercise</p>
                       <p class="mt-1 text-sm leading-6 text-amber-800">
-                        Please do not use AI assistants (ChatGPT, GitHub Copilot, etc.) for this exercise. We want to develop the fundamental skill of reading code and exploring unfamiliar codebases first. Once you've built this foundation, you'll be able to use AI to amplify this skill effectively.
+                        Please do not use AI assistants (ChatGPT, GitHub Copilot, etc.) for this exercise. We want to build the muscle of reading and navigating code on our own first. Once you have that foundation, AI tools become much more effective.
                       </p>
                     </div>
                   </div>
@@ -301,15 +309,15 @@ useHead({
                     <ul class="mt-3 space-y-2">
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Identify the tech stack: Without running the app, what technologies/frameworks can you identify from project files (pom.xml, package structure)?</span>
+                        <span class="text-sm leading-6 text-slate-700">Without running the app, what technologies and frameworks can you identify from the project files (pom.xml, package structure)?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Find the entry point: Locate the main application class. What annotations do you see?</span>
+                        <span class="text-sm leading-6 text-slate-700">Locate the main application class. What annotations do you see?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Map the architecture: Based on folder structure alone, what architectural pattern does this app follow?</span>
+                        <span class="text-sm leading-6 text-slate-700">Based on folder structure alone, what architectural pattern does this app follow?</span>
                       </li>
                     </ul>
                   </div>
@@ -319,15 +327,15 @@ useHead({
                     <ul class="mt-3 space-y-2">
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Follow a user journey: Pick one entity (like "Owner" or "Pet") and trace it through the codebase - find its model, repository, service, and controller</span>
+                        <span class="text-sm leading-6 text-slate-700">Pick one entity (like "Owner" or "Pet") and trace it through the codebase. Find its model, repository, service, and controller.</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Understand the data model: Without looking at documentation, can you sketch the database schema based on the entity classes?</span>
+                        <span class="text-sm leading-6 text-slate-700">Without looking at documentation, can you sketch the database schema based on the entity classes?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Find the database configuration: Where and how is the database configured?</span>
+                        <span class="text-sm leading-6 text-slate-700">Where and how is the database configured?</span>
                       </li>
                     </ul>
                   </div>
@@ -337,15 +345,15 @@ useHead({
                     <ul class="mt-3 space-y-2">
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Identify design patterns: Find examples of patterns being used (Repository, MVC, dependency injection)</span>
+                        <span class="text-sm leading-6 text-slate-700">Find examples of design patterns being used (Repository, MVC, dependency injection)</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Spot the conventions: What naming conventions do you notice for classes, methods, and packages?</span>
+                        <span class="text-sm leading-6 text-slate-700">What naming conventions do you notice for classes, methods, and packages?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Mystery endpoint: Given a URL like /owners/{ownerId}/pets/new, trace what happens when someone submits the form</span>
+                        <span class="text-sm leading-6 text-slate-700">Given a URL like /owners/{ownerId}/pets/new, trace what happens when someone submits the form</span>
                       </li>
                     </ul>
                   </div>
@@ -375,160 +383,7 @@ useHead({
               </div>
             </article>
 
-            <!-- Mini Workshop 2: Technology Radar -->
-            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-              <div class="p-8">
-                <!-- Header -->
-                <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                  <h3 class="flex-1 text-2xl font-bold leading-tight text-slate-900">
-                    Building a Personal Technology Radar
-                  </h3>
-                  <span class="inline-flex items-center rounded-full bg-fish-blue-100 px-3 py-1 text-sm font-semibold text-fish-blue-700">
-                    10 minutes
-                  </span>
-                </div>
-
-                <!-- Description -->
-                <p class="mt-4 text-base leading-7 text-slate-700">
-                  Learn to create your own technology radar, a powerful tool for tracking and categorizing technologies, tools, and frameworks to guide your learning journey and career development.
-                  Discover how to organize your technical landscape into actionable categories and build a roadmap for continuous skill growth.
-                </p>
-
-                <div class="mt-8 space-y-6">
-                  <div>
-                    <h4 class="text-lg font-bold text-slate-900">The Four Rings</h4>
-                    <ul class="mt-3 space-y-2">
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700"><strong>Adopt:</strong> Technologies you're currently using and mastering, your core competencies</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700"><strong>Trial:</strong> Technologies you're actively learning or experimenting with - in active development</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700"><strong>Assess:</strong> Technologies you're researching but haven't started learning - on your radar</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700"><strong>Hold:</strong> Technologies you've decided not to pursue right now - documented decisions</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 class="text-lg font-bold text-slate-900">Exploring Thoughtworks Tech Radar</h4>
-                    <ul class="mt-3 space-y-2">
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Visit the official Thoughtworks Technology Radar: <a href="https://www.thoughtworks.com/radar" class="text-fish-blue-600 underline hover:no-underline">https://www.thoughtworks.com/radar</a></span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Notice how technologies move between rings over time as they mature or decline</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Pay attention to technologies in your domain or areas of interest</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Reflection: What patterns do you notice? What technologies appear in "Adopt" vs "Hold"?</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 class="text-lg font-bold text-slate-900">Building Your Own Radar (Hands-On)</h4>
-                    <ul class="mt-3 space-y-2">
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Important: There are no wrong answers here! This is YOUR personal technology radar - it should reflect your unique interests, goals, and current skill level.</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">List 5-10 technologies you know or want to learn. You can use a spreadsheet, paper, or any format that works for you</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">For each technology, capture: Name, Ring (Adopt/Trial/Assess/Hold), Quadrant, and a brief description</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Example entries: React (Adopt, Languages & Frameworks), Docker (Trial, Tools), Rust (Assess, Languages & Frameworks)</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Optional: Use the Thoughtworks Build Your Own Radar tool at <a href="https://radar.thoughtworks.com/" class="text-fish-blue-600 underline hover:no-underline">https://radar.thoughtworks.com</a> to create an interactive visualization</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">The visualization tool requires a CSV or Google Sheet with columns: name, ring, quadrant, isNew, description</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 class="text-lg font-bold text-slate-900">Tips for Success</h4>
-                    <ul class="mt-3 space-y-2">
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Start small: 5-10 technologies is perfect for your first radar</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Be honest: Place technologies where YOU are with them, not where the industry is</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Mix categories: Use different quadrants to show breadth across your skill set</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Mark new discoveries: Use isNew=TRUE for technologies you recently discovered</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Review quarterly: Set a reminder to update your radar as your interests and skills evolve</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Combine with your career roadmap: Use your radar to guide learning priorities</span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Share with mentors: Your radar can spark valuable discussions about your career path</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 class="text-lg font-bold text-slate-900">Helpful Resources</h4>
-                    <ul class="mt-3 space-y-2">
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Build Your Own Radar tool: <a href="https://radar.thoughtworks.com/" class="text-fish-blue-600 underline hover:no-underline">https://radar.thoughtworks.com/</a></span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">GitHub repository with documentation: <a href="https://github.com/thoughtworks/build-your-own-radar" class="text-fish-blue-600 underline hover:no-underline">https://github.com/thoughtworks/build-your-own-radar</a></span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Thoughtworks Radar FAQ: <a href="https://www.thoughtworks.com/en-us/radar/faq" class="text-fish-blue-600 underline hover:no-underline">https://www.thoughtworks.com/en-us/radar/faq</a></span>
-                      </li>
-                      <li class="flex gap-3">
-                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Remember: Your radar is a living document,it should evolve as you grow</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <!-- Mini Workshop 3: Writing Code -->
+            <!-- Lab 2: Writing Code -->
             <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <div class="p-8">
                 <!-- Header -->
@@ -537,13 +392,13 @@ useHead({
                     Writing Clean Code: Identifying & Fixing Code Smells
                   </h3>
                   <span class="inline-flex items-center rounded-full bg-fish-blue-100 px-3 py-1 text-sm font-semibold text-fish-blue-700">
-                    15 minutes
+                    25 minutes
                   </span>
                 </div>
 
                 <!-- Description -->
                 <p class="mt-4 text-base leading-7 text-slate-700">
-                  In this hands-on exercise, you'll review a small Java codebase containing intentional code smells across six clean code categories. You'll practice identifying problems, refactoring code, and discussing trade-offs with your peers.
+                  You'll review a small Java codebase that's been seeded with intentional code smells across six clean code categories. Your job is to find the problems, fix a few of them, and talk through the trade-offs with your peers.
                 </p>
 
                 <!-- Repository Link -->
@@ -617,11 +472,11 @@ useHead({
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Look for logic errors: Check the loop in <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTracker</code> carefully - does the summation work correctly?</span>
+                        <span class="text-sm leading-6 text-slate-700">Check the loop in <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTracker</code> carefully. Does the summation actually work correctly?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Examine <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTrackerUtils</code>: Do the method names and documentation match what the code actually does?</span>
+                        <span class="text-sm leading-6 text-slate-700">In <code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs">WeightTrackerUtils</code>, do the method names and documentation match what the code actually does?</span>
                       </li>
                     </ul>
                   </div>
@@ -653,19 +508,52 @@ useHead({
                   </div>
 
                   <div>
-                    <h4 class="text-lg font-bold text-slate-900">Part 3: Discuss (2 minutes)</h4>
+                    <h4 class="text-lg font-bold text-slate-900">Part 3: Discuss (3 minutes)</h4>
                     <ul class="mt-3 space-y-2">
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Compare your findings with a neighbor - did they spot smells you missed?</span>
+                        <span class="text-sm leading-6 text-slate-700">Compare your findings with a neighbor. Did they spot smells you missed?</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Discuss different refactoring approaches - there's often more than one valid solution</span>
+                        <span class="text-sm leading-6 text-slate-700">Talk through different refactoring approaches. There's often more than one valid solution.</span>
                       </li>
                       <li class="flex gap-3">
                         <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
-                        <span class="text-sm leading-6 text-slate-700">Reflection: Which code smells were easiest to spot? Which were most subtle?</span>
+                        <span class="text-sm leading-6 text-slate-700">Which code smells were easiest to spot? Which were most subtle?</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Part 4: AI Tools & Code Quality Discussion (10 minutes)</h4>
+                    <p class="mt-2 text-sm leading-6 text-slate-700">
+                      Now that you've identified and fixed code smells by hand, let's talk about how AI coding tools fit into this workflow. The goal isn't to avoid these tools. It's to use them intentionally.
+                    </p>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Could an AI assistant have caught the code smells you found? Which ones would it likely miss?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">When AI generates code, how do you evaluate whether it introduced new smells or anti-patterns?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">What's the difference between using AI to <em>find</em> problems vs. using AI to <em>fix</em> them? When is each approach appropriate?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">How do you build the judgment to know when AI suggested code is good enough and when you need to push back?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">What fundamentals (like the six categories we practiced) do you need to understand <em>before</em> you can effectively use AI tools?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">AI tools amplify your skills. They don't replace the need to understand clean code principles.</span>
                       </li>
                     </ul>
                   </div>
@@ -680,6 +568,158 @@ useHead({
                     <p class="text-sm leading-6 text-slate-700">
                       <strong>After the exercise:</strong> A solution branch is available in the repository for comparison. Try to complete the exercise before checking the solution!
                     </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Lab 3: Technology Radar -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+              <div class="p-8">
+                <!-- Header -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                  <h3 class="flex-1 text-2xl font-bold leading-tight text-slate-900">
+                    Building a Personal Technology Radar
+                  </h3>
+                  <span class="inline-flex items-center rounded-full bg-fish-blue-100 px-3 py-1 text-sm font-semibold text-fish-blue-700">
+                    10 minutes
+                  </span>
+                </div>
+
+                <!-- Description -->
+                <p class="mt-4 text-base leading-7 text-slate-700">
+                  Create your own technology radar to track and categorize the technologies, tools, and frameworks that matter to you. You'll organize your technical landscape into rings and use it as a guide for your learning journey and career growth.
+                </p>
+
+                <div class="mt-8 space-y-6">
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">The Four Rings</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700"><strong>Adopt:</strong> Technologies you're currently using and mastering, your core competencies</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700"><strong>Trial:</strong> Technologies you're actively learning or experimenting with</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700"><strong>Assess:</strong> Technologies you're researching but haven't started learning yet</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700"><strong>Hold:</strong> Technologies you've decided not to pursue right now</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Exploring Thoughtworks Tech Radar</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Visit the official Thoughtworks Technology Radar: <a href="https://www.thoughtworks.com/radar" class="text-fish-blue-600 underline hover:no-underline">https://www.thoughtworks.com/radar</a></span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Notice how technologies move between rings over time as they mature or decline</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Pay attention to technologies in your domain or areas of interest</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">What patterns do you notice? What technologies appear in "Adopt" vs "Hold"?</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Build Your Own Radar</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">There are no wrong answers here! This is YOUR personal technology radar. It should reflect your unique interests, goals, and current skill level.</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">List 5-10 technologies you know or want to learn. You can use a spreadsheet, paper, or any format that works for you</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">For each technology, capture the name, ring (Adopt/Trial/Assess/Hold), quadrant, and a brief description</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">For example, React (Adopt, Languages & Frameworks), Docker (Trial, Tools), Rust (Assess, Languages & Frameworks)</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">You can optionally use the Thoughtworks Build Your Own Radar tool at <a href="https://radar.thoughtworks.com/" class="text-fish-blue-600 underline hover:no-underline">https://radar.thoughtworks.com</a> to create an interactive visualization</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">The visualization tool requires a CSV or Google Sheet with columns: name, ring, quadrant, isNew, description</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Tips for Success</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">5 to 10 technologies is perfect for your first radar</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Place technologies where YOU are with them, not where the industry is</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Use different quadrants to show breadth across your skill set</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Use isNew=TRUE for technologies you recently discovered</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Set a reminder to update your radar quarterly as your interests and skills evolve</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Use your radar to guide learning priorities and your career roadmap</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Share it with mentors. Your radar can spark valuable conversations about your career path.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Helpful Resources</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Build Your Own Radar tool: <a href="https://radar.thoughtworks.com/" class="text-fish-blue-600 underline hover:no-underline">https://radar.thoughtworks.com/</a></span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">GitHub repository with documentation: <a href="https://github.com/thoughtworks/build-your-own-radar" class="text-fish-blue-600 underline hover:no-underline">https://github.com/thoughtworks/build-your-own-radar</a></span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Thoughtworks Radar FAQ: <a href="https://www.thoughtworks.com/en-us/radar/faq" class="text-fish-blue-600 underline hover:no-underline">https://www.thoughtworks.com/en-us/radar/faq</a></span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Your radar is a living document. It should evolve as you grow.</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
