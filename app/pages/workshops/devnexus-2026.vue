@@ -724,6 +724,100 @@ useHead({
                 </div>
               </div>
             </article>
+
+            <!-- Lab 4: Career Exploration with AI & NotebookLM -->
+            <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+              <div class="p-8">
+                <!-- Header -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                  <h3 class="flex-1 text-2xl font-bold leading-tight text-slate-900">
+                    Career Exploration with AI &amp; NotebookLM
+                  </h3>
+                  <span class="inline-flex items-center rounded-full bg-fish-blue-100 px-3 py-1 text-sm font-semibold text-fish-blue-700">
+                    15 minutes
+                  </span>
+                </div>
+
+                <!-- Description -->
+                <p class="mt-4 text-base leading-7 text-slate-700">
+                  Use AI tools and Google NotebookLM to research a role you're interested in, prepare for interviews, and make informed decisions about your career path.
+                </p>
+
+                <div class="mt-8 space-y-6">
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Getting Started</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Navigate to <a href="https://notebooklm.google.com/" class="text-fish-blue-600 underline hover:no-underline">Google NotebookLM</a> and create a new notebook</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Search for a role you're interested in (e.g., Solutions Architect, Staff Engineer, Engineering Manager)</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Import relevant sources such as job postings, blog posts, or career guides into your notebook</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Research Your Role</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Use the chat to ask: How many years of experience are typically needed for this role?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Ask about certifications or credentials that are valuable for this career path</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Discover relevant podcasts, videos, and books to deepen your understanding of the role</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Explore Further with AI</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Use AI to help you prepare for an interview for this role — ask for common questions and how to approach them</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Compare options such as cloud providers, frameworks, or specializations relevant to the role</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Research learning paths and create a roadmap for building the skills you need</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="text-lg font-bold text-slate-900">Discussion</h4>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Share your findings with a neighbor — what role did you explore and what surprised you?</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">Discuss how AI tools changed the research process compared to traditional searching</span>
+                      </li>
+                      <li class="flex gap-3">
+                        <span class="flex-shrink-0 text-fish-blue-600 font-semibold">&bull;</span>
+                        <span class="text-sm leading-6 text-slate-700">What are the strengths and limitations of using AI for career exploration?</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </Container>
