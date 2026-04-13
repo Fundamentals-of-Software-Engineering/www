@@ -15,6 +15,9 @@
           <NuxtLink to="/authors" class="hover:text-slate-900 transition">
             Authors
           </NuxtLink>
+          <NuxtLink to="/workshops" class="hover:text-slate-900 transition">
+            Workshops
+          </NuxtLink>
         </div>
         <p class="text-sm text-slate-500">
           &copy; {{ new Date().getFullYear() }} FOSE. All rights reserved.
