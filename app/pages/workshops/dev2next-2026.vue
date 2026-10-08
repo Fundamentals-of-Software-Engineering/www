@@ -70,10 +70,10 @@ const labs = [
 
 const extraLabs = [
   {
-    title: 'Research a role with NotebookLM',
+    title: 'Research a role with Gemini Notebook',
     folder: 'tools/notebooklm-career-lab',
     minutes: 15,
-    description: 'Gather job posts and career guides for a role you want. Use NotebookLM to find the skills that keep showing up.'
+    description: 'Gather job posts and career guides for a role you want. Use Gemini Notebook (formerly NotebookLM) to find the skills that keep showing up.'
   },
   {
     title: 'Your personal tech radar',
@@ -261,7 +261,7 @@ useHead({
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-              <p class="text-base leading-7 text-slate-700">Optional: A Google account for the <a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer" class="text-fish-blue-600 underline hover:no-underline">NotebookLM</a> lab</p>
+              <p class="text-base leading-7 text-slate-700">Optional: A Google account for the <a href="https://notebook.google.com" target="_blank" rel="noopener noreferrer" class="text-fish-blue-600 underline hover:no-underline">Gemini Notebook</a> lab (formerly NotebookLM)</p>
             </li>
           </ul>
         </div>
