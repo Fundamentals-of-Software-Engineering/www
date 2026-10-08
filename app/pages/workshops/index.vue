@@ -34,6 +34,18 @@ const workshops = [
     location: 'Arc of AI 2026',
     venue: 'Austin Marriott North, Round Rock',
     description: 'This intensive workshop bridges fundamental programming skills with expertise needed to work alongside AI tools through a balanced mix of conceptual teaching and hands-on exercises.',
+    status: 'past'
+  },
+  {
+    id: 4,
+    slug: 'dev2next-2026',
+    title: 'Fundamentals of Software Engineering in the Age of AI',
+    date: new Date('2026-10-12T09:00:00-06:00'),
+    time: '9:00 AM MDT',
+    duration: '8 hours',
+    location: 'Dev2Next 2026',
+    venue: 'Denver Marriott South at Park Meadows, Lone Tree',
+    description: 'A full-day, hands-on workshop on the software engineering fundamentals you still need to use AI coding agents well.',
     status: 'upcoming'
   }
 ]
