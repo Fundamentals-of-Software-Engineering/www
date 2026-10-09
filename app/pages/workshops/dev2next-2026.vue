@@ -33,37 +33,31 @@ const labs = [
   {
     title: 'Read before you prompt',
     folder: 'read-before-you-prompt-lab',
-    minutes: 25,
     description: 'Find your way around Spring PetClinic on your own first. Then ask your agent for a tour and check its answers against what you found.'
   },
   {
     title: 'Defuse the grenade',
     folder: 'defuse-the-grenade-lab',
-    minutes: 25,
     description: 'An AI agent opened a pull request. It compiles and every test passes. Review it with your team and find the problems before it merges.'
   },
   {
     title: 'Spec it before you prompt',
     folder: 'spec-it-before-you-prompt-lab',
-    minutes: 20,
     description: 'Build the same small feature twice. Once from a one-line prompt, once from a short spec. Then compare what you get.'
   },
   {
     title: 'Net before refactor',
     folder: 'net-before-refactor-lab',
-    minutes: 20,
     description: 'Write tests that pin down what the code does today. Then let your agent refactor it, with your tests as the safety net.'
   },
   {
     title: 'Learn it, don\'t ship it',
     folder: 'learn-it-dont-ship-it-lab',
-    minutes: 20,
     description: 'Use your agent as a tutor, not an author, to learn something new. Then check what stuck with a short quiz.'
   },
   {
     title: 'Capstone: your AGENTS.md',
     folder: 'capstone-agents-md',
-    minutes: 20,
     description: 'Each lab adds a few lines to your own AGENTS.md. Pull them together into one file and take it home to your team.'
   }
 ]
@@ -72,13 +66,11 @@ const extraLabs = [
   {
     title: 'Research a role with Gemini Notebook',
     folder: 'tools/notebooklm-career-lab',
-    minutes: 15,
     description: 'Gather job posts and career guides for a role you want. Use Gemini Notebook (formerly NotebookLM) to find the skills that keep showing up.'
   },
   {
     title: 'Your personal tech radar',
     folder: 'tools/tech-radar-lab',
-    minutes: 10,
     description: 'Sort the tools you care about into adopt, trial, assess and hold. Use it to decide what to learn next.'
   }
 ]
@@ -313,9 +305,6 @@ useHead({
                   <h3 class="flex-1 text-2xl font-bold leading-tight text-slate-900">
                     <span class="text-fish-blue-600">Lab {{ index + 1 }}.</span> {{ lab.title }}
                   </h3>
-                  <span class="inline-flex items-center rounded-full bg-fish-blue-100 px-3 py-1 text-sm font-semibold text-fish-blue-700">
-                    {{ lab.minutes }} minutes
-                  </span>
                 </div>
 
                 <!-- Description -->
@@ -359,9 +348,6 @@ useHead({
                   <h3 class="flex-1 text-2xl font-bold leading-tight text-slate-900">
                     {{ lab.title }}
                   </h3>
-                  <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">
-                    {{ lab.minutes }} minutes
-                  </span>
                 </div>
 
                 <!-- Description -->
