@@ -260,8 +260,51 @@ useHead({
       </Container>
     </section>
 
+    <!-- Before the workshop -->
+    <section id="before-the-workshop" class="scroll-mt-14 border-t border-slate-100 py-16 sm:scroll-mt-32 sm:py-20">
+      <Container>
+        <div class="max-w-3xl">
+          <h2 class="font-display text-3xl font-extrabold tracking-tight text-slate-900">
+            Before the workshop
+          </h2>
+          <p class="mt-4 text-base leading-7 text-slate-700">
+            Please set up your laptop before Monday, on good wifi. Most of the setup is downloads. The conference wifi will thank you.
+          </p>
+          <p class="mt-4 text-base leading-7 text-slate-700">
+            You need two repositories, side by side in the same folder. PetClinic is the code you'll work on all day. The workshop repository has the lab instructions and a few files the labs use.
+          </p>
+          <pre class="mt-6 overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-800"><code>mkdir fundamentals-workshop
+cd fundamentals-workshop
+
+git clone https://github.com/spring-projects/spring-petclinic.git
+cd spring-petclinic
+git checkout 500158f732419217507c7656904b8e6aa1bcc0d6
+./mvnw -DskipTests package
+cd ..
+
+git clone https://github.com/Fundamentals-of-Software-Engineering/workshop.git
+cd workshop/learn-it-dont-ship-it-lab/starter
+./mvnw test</code></pre>
+          <p class="mt-4 text-base leading-7 text-slate-700">
+            You're ready when both builds end with <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">BUILD SUCCESS</code>. The second one shows <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">Tests run: 0</code>. That's expected.
+          </p>
+          <p class="mt-4 text-base leading-7 text-slate-700">
+            Your folder should look like this:
+          </p>
+          <pre class="mt-3 overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-800"><code>fundamentals-workshop/
+  spring-petclinic/
+  workshop/</code></pre>
+          <p class="mt-4 text-base leading-7 text-slate-700">
+            On Windows, run these commands in Git Bash. It comes with Git for Windows.
+          </p>
+          <p class="mt-4 text-base leading-7 text-slate-700">
+            Please don't read the PetClinic code ahead of time. The first lab starts with seeing it fresh.
+          </p>
+        </div>
+      </Container>
+    </section>
+
     <!-- Labs -->
-    <!-- NOTE: The lab folders in the workshop repo aren't pushed to GitHub yet. These links will 404 until Dan pushes them. -->
     <section class="scroll-mt-14 border-t border-slate-100 py-16 sm:scroll-mt-32 sm:py-20">
       <Container>
         <div class="max-w-4xl">
