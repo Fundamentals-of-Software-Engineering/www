@@ -270,19 +270,13 @@ useHead({
             Please set up your laptop before Monday, on good wifi. Most of the setup is downloads. The conference wifi will thank you.
           </p>
           <p class="mt-4 text-base leading-7 text-slate-700">
-            You need one repository: our copy of Spring PetClinic. It's the code you'll work on all day, and every lab is a branch in it. Clone it, then build it and the Learn it lab's project once:
+            Clone our copy of Spring PetClinic. It's the only thing you need. You'll work on it all day, and every lab is a branch in it. Then build it once, so the downloads happen at home:
           </p>
           <pre class="mt-6 overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-800"><code>git clone https://github.com/Fundamentals-of-Software-Engineering/spring-petclinic.git
 cd spring-petclinic
-./mvnw -DskipTests package
-
-git switch learn-it-dont-ship-it
-cd clinic-rules
-./mvnw test
-cd ..
-git switch main</code></pre>
+./mvnw -DskipTests package</code></pre>
           <p class="mt-4 text-base leading-7 text-slate-700">
-            You're ready when both builds end with <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">BUILD SUCCESS</code>. The second one shows <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">Tests run: 0</code>. That's expected.
+            You're ready when it ends with <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">BUILD SUCCESS</code>.
           </p>
           <p class="mt-4 text-base leading-7 text-slate-700">
             On Windows, type <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">.\mvnw.cmd</code> instead of <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">./mvnw</code>.
