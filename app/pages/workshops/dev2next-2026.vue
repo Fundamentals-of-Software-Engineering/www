@@ -25,9 +25,8 @@ const learnings = [
   'How to turn your fundamentals into your agent\'s instructions, in your own AGENTS.md'
 ]
 
-// NOTE: These lab folders aren't pushed to GitHub yet.
-// The links will 404 until the workshop repo is pushed.
 const labRepo = 'https://github.com/Fundamentals-of-Software-Engineering/workshop'
+const petclinicRepo = 'https://github.com/Fundamentals-of-Software-Engineering/spring-petclinic'
 
 const labs = [
   {
@@ -221,7 +220,7 @@ useHead({
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-              <p class="text-base leading-7 text-slate-700">Working knowledge of at least one programming language. The labs use Java and <a href="https://github.com/spring-projects/spring-petclinic" target="_blank" rel="noopener noreferrer" class="text-fish-blue-600 underline hover:no-underline">Spring PetClinic</a>.</p>
+              <p class="text-base leading-7 text-slate-700">Working knowledge of at least one programming language. The labs use Java and <a :href="petclinicRepo" target="_blank" rel="noopener noreferrer" class="text-fish-blue-600 underline hover:no-underline">Spring PetClinic</a>.</p>
             </li>
             <li class="flex gap-3">
               <div class="flex-shrink-0">
@@ -271,31 +270,22 @@ useHead({
             Please set up your laptop before Monday, on good wifi. Most of the setup is downloads. The conference wifi will thank you.
           </p>
           <p class="mt-4 text-base leading-7 text-slate-700">
-            You need two repositories, side by side in the same folder. PetClinic is the code you'll work on all day. The workshop repository has the lab instructions and a few files the labs use.
+            You need one repository: our copy of Spring PetClinic. It's the code you'll work on all day, and every lab is a branch in it. Clone it, then build it and the Learn it lab's project once:
           </p>
-          <pre class="mt-6 overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-800"><code>mkdir fundamentals-workshop
-cd fundamentals-workshop
-
-git clone https://github.com/spring-projects/spring-petclinic.git
+          <pre class="mt-6 overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-800"><code>git clone https://github.com/Fundamentals-of-Software-Engineering/spring-petclinic.git
 cd spring-petclinic
-git checkout 500158f732419217507c7656904b8e6aa1bcc0d6
 ./mvnw -DskipTests package
-cd ..
 
-git clone https://github.com/Fundamentals-of-Software-Engineering/workshop.git
-cd workshop/learn-it-dont-ship-it-lab/starter
-./mvnw test</code></pre>
+git switch learn-it-dont-ship-it
+cd clinic-rules
+./mvnw test
+cd ..
+git switch main</code></pre>
           <p class="mt-4 text-base leading-7 text-slate-700">
             You're ready when both builds end with <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">BUILD SUCCESS</code>. The second one shows <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">Tests run: 0</code>. That's expected.
           </p>
           <p class="mt-4 text-base leading-7 text-slate-700">
-            Your folder should look like this:
-          </p>
-          <pre class="mt-3 overflow-x-auto rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-800"><code>fundamentals-workshop/
-  spring-petclinic/
-  workshop/</code></pre>
-          <p class="mt-4 text-base leading-7 text-slate-700">
-            On Windows, run these commands in Git Bash. It comes with Git for Windows.
+            On Windows, type <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">.\mvnw.cmd</code> instead of <code class="rounded bg-slate-100 px-1.5 py-0.5 text-sm">./mvnw</code>.
           </p>
           <p class="mt-4 text-base leading-7 text-slate-700">
             Please don't read the PetClinic code ahead of time. The first lab starts with seeing it fresh.
@@ -322,16 +312,13 @@ cd workshop/learn-it-dont-ship-it-lab/starter
                 <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
               <div class="flex-1">
-                <h4 class="text-sm font-semibold text-fish-blue-900">Workshop Repository</h4>
+                <h4 class="text-sm font-semibold text-fish-blue-900">Lab instructions</h4>
                 <a :href="labRepo" target="_blank" rel="noopener noreferrer" class="mt-1 block text-sm text-fish-blue-700 hover:text-fish-blue-800 hover:underline break-all">
                   {{ labRepo }}
                 </a>
                 <p class="mt-2 text-sm text-fish-blue-900">
-                  <strong>Clone the repository:</strong>
+                  Read them in your browser. You don't need to clone this one. The code is in the PetClinic clone from <a href="#before-the-workshop" class="underline hover:no-underline">Before the workshop</a>.
                 </p>
-                <code class="mt-1 block rounded bg-white px-3 py-2 text-xs text-slate-800 border border-fish-blue-200">
-                  git clone {{ labRepo }}.git
-                </code>
               </div>
             </div>
           </div>
