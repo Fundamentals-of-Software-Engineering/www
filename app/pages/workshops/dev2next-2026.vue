@@ -298,6 +298,9 @@ cd spring-petclinic
           <p class="mt-4 text-lg leading-8 text-slate-700">
             The day is built around six hands-on labs. They all use one codebase, Spring PetClinic. Each lab works the same way. Do it yourself first. Then do it with your agent. Then compare and judge.
           </p>
+          <p class="mt-4 text-lg leading-8 text-slate-700">
+            We might not get to every lab today. If we don't, try the rest on your own. Everything you need is here, answers included. Have questions? Find us at the conference. We'd love to talk about them.
+          </p>
 
           <!-- Repository Link -->
           <div class="mt-8 rounded-lg border border-fish-blue-200 bg-fish-blue-50 p-4">
