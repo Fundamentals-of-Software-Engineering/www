@@ -45,23 +45,23 @@ const labs = [
     description: 'Build the same small feature twice. Once from a one-line prompt, once from a short spec. Then compare what you get.'
   },
   {
+    title: 'Learn it, don\'t ship it',
+    folder: 'learn-it-dont-ship-it-lab',
+    description: 'Use your agent as a tutor, not an author, to learn something new. Then check what stuck with a short quiz.'
+  }
+]
+
+const extraLabs = [
+  {
     title: 'Net before refactor',
     folder: 'net-before-refactor-lab',
     description: 'Write tests that pin down what the code does today. Then let your agent refactor it, with your tests as the safety net.'
   },
   {
-    title: 'Learn it, don\'t ship it',
-    folder: 'learn-it-dont-ship-it-lab',
-    description: 'Use your agent as a tutor, not an author, to learn something new. Then check what stuck with a short quiz.'
-  },
-  {
     title: 'Capstone: your AGENTS.md',
     folder: 'capstone-agents-md',
     description: 'Turn what you saw in the labs into your own AGENTS.md. Start from our example, make it yours, and take it home to your team.'
-  }
-]
-
-const extraLabs = [
+  },
   {
     title: 'Research a role with Gemini Notebook',
     folder: 'tools/notebooklm-career-lab',
@@ -296,7 +296,7 @@ cd spring-petclinic
             Labs
           </h2>
           <p class="mt-4 text-lg leading-8 text-slate-700">
-            The day is built around six hands-on labs. They all use one codebase, Spring PetClinic. Each lab works the same way. Do it yourself first. Then do it with your agent. Then compare and judge.
+            The day is built around four hands-on labs. They all use one codebase, Spring PetClinic. Each lab works the same way. Do it yourself first. Then do it with your agent. Then compare and judge.
           </p>
           <p class="mt-4 text-lg leading-8 text-slate-700">
             We might not get to every lab today. If we don't, try the rest on your own. Everything you need is here, answers included. Have questions? Find us at the conference. We'd love to talk about them.
