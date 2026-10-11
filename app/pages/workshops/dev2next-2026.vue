@@ -57,7 +57,7 @@ const labs = [
   {
     title: 'Capstone: your AGENTS.md',
     folder: 'capstone-agents-md',
-    description: 'Each lab adds a few lines to your own AGENTS.md. Pull them together into one file and take it home to your team.'
+    description: 'Turn what you saw in the labs into your own AGENTS.md. Start from our example, make it yours, and take it home to your team.'
   }
 ]
 
