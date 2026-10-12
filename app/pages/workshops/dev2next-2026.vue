@@ -48,6 +48,11 @@ const labs = [
     title: 'Learn it, don\'t ship it',
     folder: 'learn-it-dont-ship-it-lab',
     description: 'Use your agent as a tutor, not an author, to learn something new. Then check what stuck with a short quiz.'
+  },
+  {
+    title: 'Research a role with Gemini Notebook',
+    folder: 'research-a-role-lab',
+    description: 'The career lab. Gather job posts and career guides for a role you want. Use Gemini Notebook to find the skills that keep showing up, then check what it told you.'
   }
 ]
 
@@ -61,11 +66,6 @@ const extraLabs = [
     title: 'Capstone: your AGENTS.md',
     folder: 'capstone-agents-md',
     description: 'Turn what you saw in the labs into your own AGENTS.md. Start from our example, make it yours, and take it home to your team.'
-  },
-  {
-    title: 'Research a role with Gemini Notebook',
-    folder: 'tools/notebooklm-career-lab',
-    description: 'Gather job posts and career guides for a role you want. Use Gemini Notebook (formerly NotebookLM) to find the skills that keep showing up.'
   },
   {
     title: 'Your personal tech radar',
@@ -252,7 +252,7 @@ useHead({
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
-              <p class="text-base leading-7 text-slate-700">Optional: A Google account for the <a href="https://notebook.google.com" target="_blank" rel="noopener noreferrer" class="text-fish-blue-600 underline hover:no-underline">Gemini Notebook</a> lab (formerly NotebookLM)</p>
+              <p class="text-base leading-7 text-slate-700">A Google account, for the <a href="https://notebook.google.com" target="_blank" rel="noopener noreferrer" class="text-fish-blue-600 underline hover:no-underline">Gemini Notebook</a> lab</p>
             </li>
           </ul>
         </div>
@@ -296,7 +296,7 @@ cd spring-petclinic
             Labs
           </h2>
           <p class="mt-4 text-lg leading-8 text-slate-700">
-            The day is built around four hands-on labs. They all use one codebase, Spring PetClinic. Each lab works the same way. Do it yourself first. Then do it with your agent. Then compare and judge.
+            The day is built around five hands-on labs. They all use one codebase, Spring PetClinic. Each lab works the same way. Do it yourself first. Then do it with your agent. Then compare and judge.
           </p>
           <p class="mt-4 text-lg leading-8 text-slate-700">
             We might not get to every lab today. If we don't, try the rest on your own. Everything you need is here, answers included. Have questions? Find us at the conference. We'd love to talk about them.
