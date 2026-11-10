@@ -46,7 +46,18 @@ const workshops = [
     location: 'Dev2Next 2026',
     venue: 'Denver Marriott South at Park Meadows, Lone Tree',
     description: 'A full-day, hands-on workshop on the software engineering fundamentals you still need to use AI coding agents well.',
-    status: 'upcoming'
+    status: 'past'
+  },
+  {
+    id: 5,
+    slug: 'porto-tech-hub-2026',
+    title: 'Fundamentals of Software Engineering in the Age of AI',
+    format: 'Keynote',
+    date: new Date('2026-11-10T12:00:00Z'),
+    location: 'Porto Tech Hub Conference 2026',
+    venue: 'Alfândega do Porto, Porto, Portugal',
+    description: 'Our keynote at Porto Tech Hub Conference 2026. AI made writing code cheap. Owning code is still expensive, and the fundamentals are how you own it.',
+    status: 'past'
   }
 ]
 
@@ -129,8 +140,13 @@ const pastWorkshops = workshops.filter(w => w.status === 'past').sort((a, b) => 
 
               <!-- Right side: Content -->
               <div class="flex-1">
-                <div class="inline-flex items-center rounded-full bg-fish-blue-50 px-3 py-1 text-xs font-semibold text-fish-blue-700">
-                  {{ workshop.location }}
+                <div class="flex flex-wrap items-center gap-2">
+                  <div class="inline-flex items-center rounded-full bg-fish-blue-50 px-3 py-1 text-xs font-semibold text-fish-blue-700">
+                    {{ workshop.location }}
+                  </div>
+                  <div v-if="workshop.format" class="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 ring-1 ring-slate-200">
+                    {{ workshop.format }}
+                  </div>
                 </div>
 
                 <h3 class="mt-3 text-2xl font-bold leading-tight text-slate-900 group-hover:text-fish-blue-600 transition-colors">
@@ -184,8 +200,13 @@ const pastWorkshops = workshops.filter(w => w.status === 'past').sort((a, b) => 
               </div>
 
               <div class="flex-1">
-                <div class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
-                  {{ workshop.location }}
+                <div class="flex flex-wrap items-center gap-2">
+                  <div class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
+                    {{ workshop.location }}
+                  </div>
+                  <div v-if="workshop.format" class="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 ring-1 ring-slate-200">
+                    {{ workshop.format }}
+                  </div>
                 </div>
 
                 <h3 class="mt-3 text-2xl font-bold leading-tight text-slate-900 group-hover:text-fish-blue-600 transition-colors">
