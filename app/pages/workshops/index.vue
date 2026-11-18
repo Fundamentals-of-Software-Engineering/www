@@ -58,6 +58,18 @@ const workshops = [
     venue: 'Alfândega do Porto, Porto, Portugal',
     description: 'Our keynote at Porto Tech Hub Conference 2026. AI made writing code cheap. Owning code is still expensive, and the fundamentals are how you own it.',
     status: 'past'
+  },
+  {
+    id: 6,
+    slug: 'qcon-sf-2026',
+    title: 'Fundamentals of Software Engineering in the Age of AI',
+    date: new Date('2026-11-19T13:00:00-08:00'),
+    time: '1:00 PM PST',
+    duration: '3 hours',
+    location: 'QCon San Francisco 2026',
+    venue: 'Marina, Hyatt Regency San Francisco',
+    description: 'A hands-on, three-hour workshop on where AI coding tools help, where they hurt, and why the fundamentals are your biggest advantage right now.',
+    status: 'upcoming'
   }
 ]
 
