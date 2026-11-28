@@ -117,7 +117,7 @@
             <span class="ml-2.5">Watch</span>
           </h2>
           <div class="mt-4 flex flex-col gap-4">
-            <a href="https://www.youtube.com/@FundamentalsSWE" target="_blank" rel="noopener noreferrer" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
+            <a href="https://www.youtube.com/@FundamentalsofSWE" target="_blank" rel="noopener noreferrer" class="group flex items-center text-base font-medium text-slate-700 leading-7 hover:text-slate-900">
               <svg class="h-8 w-8 fill-slate-400 group-hover:fill-slate-600" viewBox="0 0 32 32">
                 <path d="M31.331 8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673s-10.006 0-12.502.673c-1.377.37-2.461 1.462-2.829 2.848C0 10.758 0 16 0 16s0 5.242.669 7.752c.368 1.386 1.452 2.477 2.829 2.848 2.496.673 12.502.673 12.502.673s10.006 0 12.502-.673c1.377-.37 2.461-1.462 2.829-2.848C32 21.242 32 16 32 16s0-5.242-.669-7.752zM12.727 20.758V11.242L21.091 16l-8.364 4.758z"/>
               </svg>
